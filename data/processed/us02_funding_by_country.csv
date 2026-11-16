@@ -50,141 +50,141 @@ MK,North Macedonia,False,125,3.0,0.023
 KR,South Korea,False,159,0.0,0.022
 BF,Burkina Faso,False,40,0.0,0.02
 ME,Montenegro,False,56,4.0,0.019
-ML,Mali,False,18,0.0,0.018
-GA,Gabon,False,24,0.0,0.018
 BA,Bosnia and Herzegovina,False,122,8.0,0.018
+GA,Gabon,False,24,0.0,0.018
+ML,Mali,False,18,0.0,0.018
 TN,Tunisia,False,107,6.0,0.017
-NZ,New Zealand,False,99,0.0,0.016
 AU,Australia,False,311,2.0,0.016
+NZ,New Zealand,False,99,0.0,0.016
 ZM,Zambia,False,45,0.0,0.015
 CM,Cameroon,False,43,0.0,0.014
-RW,Rwanda,False,44,0.0,0.014
 MD,Moldova,False,112,4.0,0.014
+RW,Rwanda,False,44,0.0,0.014
 BR,Brazil,False,244,0.0,0.013
 AL,Albania,False,92,4.0,0.012
-GE,Gilbert and Ellice Islands,False,95,4.0,0.012
 CI,Côte d’Ivoire,False,33,0.0,0.012
+GE,Gilbert and Ellice Islands,False,95,4.0,0.012
 AM,Armenia,False,41,6.0,0.011
-EG,Egypt,False,75,0.0,0.01
 BJ,Benin,False,26,0.0,0.01
 CG,Congo,False,16,0.0,0.01
+EG,Egypt,False,75,0.0,0.01
 CO,Colombia,False,132,0.0,0.009
 FO,Faroes,False,35,2.0,0.008
 LB,Lebanon,False,43,0.0,0.007
 MA,Morocco,False,84,0.0,0.007
-ZW,Zimbabwe,False,13,0.0,0.007
 MW,Malawi,False,18,0.0,0.007
+ZW,Zimbabwe,False,13,0.0,0.007
 CL,Chile,False,98,0.0,0.006
 MG,Madagascar,False,17,0.0,0.006
-SG,Singapore,False,52,0.0,0.005
 MH,Marshall Islands,False,2,0.0,0.005
-IN,India,False,133,0.0,0.004
+SG,Singapore,False,52,0.0,0.005
 AR,Argentina,False,214,0.0,0.004
-TH,Thailand,False,67,0.0,0.004
 GL,Greenland,False,16,0.0,0.004
+IN,India,False,133,0.0,0.004
+TH,Thailand,False,67,0.0,0.004
+BD,Bangladesh,False,11,0.0,0.003
 CV,Cabo Verde,False,20,0.0,0.003
 PK,Pakistan,False,20,0.0,0.003
 XK,XK,False,27,1.0,0.003
-BD,Bangladesh,False,11,0.0,0.003
 ,,,24,0.0,0.003
 BI,Burundi,False,9,0.0,0.002
+CR,Costa Rica,False,21,0.0,0.002
+DZ,Algeria,False,18,0.0,0.002
+EC,Ecuador,False,27,0.0,0.002
+GN,Guinea,False,9,0.0,0.002
+JO,Jordan,False,17,0.0,0.002
+JP,Japan,False,250,0.0,0.002
+KZ,Kazakhstan,False,42,0.0,0.002
+LS,Lesotho,False,4,0.0,0.002
 NA,Namibia,False,10,0.0,0.002
 PE,Peru,False,30,0.0,0.002
-DZ,Algeria,False,18,0.0,0.002
-GN,Guinea,False,9,0.0,0.002
-KZ,Kazakhstan,False,42,0.0,0.002
 PH,Philippines,False,17,0.0,0.002
-LS,Lesotho,False,4,0.0,0.002
-VN,Viet Nam,False,34,0.0,0.002
-JO,Jordan,False,17,0.0,0.002
 SL,Sierra Leone,False,9,0.0,0.002
-EC,Ecuador,False,27,0.0,0.002
 TG,Togo,False,6,0.0,0.002
-JP,Japan,False,250,0.0,0.002
-CR,Costa Rica,False,21,0.0,0.002
-NP,Nepal,False,6,0.0,0.001
+VN,Viet Nam,False,34,0.0,0.002
 AW,Aruba,False,6,0.0,0.001
-JM,Jamaica,False,4,0.0,0.001
-GM,The Gambia,False,4,0.0,0.001
-TL,Timor-Leste,False,1,0.0,0.001
-SO,Somalia,False,3,0.0,0.001
-ID,Indonesia,False,26,0.0,0.001
-MY,Malaysia,False,42,0.0,0.001
-MU,Mauritius,False,12,0.0,0.001
-CN,China,False,299,0.0,0.001
-SZ,Eswatini,False,4,0.0,0.001
-UZ,Uzbekistan,False,60,0.0,0.001
 BW,Botswana,False,7,0.0,0.001
+CN,China,False,299,0.0,0.001
+GM,The Gambia,False,4,0.0,0.001
 GT,Guatemala,False,4,0.0,0.001
-NE,Niger,False,2,0.0,0.001
-LK,Sri Lanka,False,12,0.0,0.001
-MV,Maldives,False,3,0.0,0.001
+ID,Indonesia,False,26,0.0,0.001
+JM,Jamaica,False,4,0.0,0.001
 KH,Cambodia,False,6,0.0,0.001
-NI,Nicaragua,False,1,0.0,0.001
+LK,Sri Lanka,False,12,0.0,0.001
+MU,Mauritius,False,12,0.0,0.001
+MV,Maldives,False,3,0.0,0.001
 MX,Mexico,False,64,0.0,0.001
-DO,Dominican Republic,False,4,0.0,0.0
-SY,Syria,False,1,0.0,0.0
-CW,Curaçao,False,4,1.0,0.0
-UY,Uruguay,False,17,0.0,0.0
-SD,Sudan,False,1,0.0,0.0
-CF,Central African Republic,False,4,0.0,0.0
-GU,Guam,False,2,0.0,0.0
-SR,Suriname,False,1,0.0,0.0
-MP,Northern Mariana Islands,False,2,0.0,0.0
-OM,Oman,False,1,0.0,0.0
-KM,Comoros,False,1,0.0,0.0
-TM,Turkmenistan,False,5,0.0,0.0
-VU,Vanuatu,False,1,0.0,0.0
-KW,Kuwait,False,1,0.0,0.0
-AZ,Azerbaijan,False,19,0.0,0.0
-MO,Macao,False,2,0.0,0.0
-TW,Taiwan,False,34,0.0,0.0
-TJ,Tajikistan,False,7,0.0,0.0
-BO,Bolivia,False,14,0.0,0.0
-AE,United Arab Emirates,False,11,0.0,0.0
-VE,Venezuela,False,2,0.0,0.0
-LA,Laos,False,2,0.0,0.0
-SB,Solomon Islands,False,1,0.0,0.0
-BT,Bhutan,False,2,0.0,0.0
-LR,Liberia,False,6,0.0,0.0
-PR,Puerto Rico,False,1,0.0,0.0
-QA,Qatar,False,1,0.0,0.0
-LY,Libya,False,2,0.0,0.0
-HT,Haiti,False,1,0.0,0.0
-SA,Saudi Arabia,False,15,0.0,0.0
-MC,Monaco,False,5,0.0,0.0
-AO,Angola,False,7,0.0,0.0
-MR,Mauritania,False,3,0.0,0.0
-SV,El Salvador,False,1,0.0,0.0
-LI,Liechtenstein,False,5,0.0,0.0
-GQ,Equatorial Guinea,False,1,0.0,0.0
-NU,Niue,False,1,0.0,0.0
+MY,Malaysia,False,42,0.0,0.001
+NE,Niger,False,2,0.0,0.001
+NI,Nicaragua,False,1,0.0,0.001
+NP,Nepal,False,6,0.0,0.001
+SO,Somalia,False,3,0.0,0.001
+SZ,Eswatini,False,4,0.0,0.001
+TL,Timor-Leste,False,1,0.0,0.001
+UZ,Uzbekistan,False,60,0.0,0.001
 AD,Andorra,False,1,0.0,0.0
-PY,Paraguay,False,3,0.0,0.0
-KG,Kyrgyzstan,False,19,0.0,0.0
-PS,Palestine*,False,5,0.0,0.0
-IR,Iran,False,6,0.0,0.0
-PA,Panama,False,2,0.0,0.0
+AE,United Arab Emirates,False,11,0.0,0.0
+AF,Afghanistan,False,1,0.0,0.0
+AI,French Afar and Issas,False,1,0.0,0.0
+AO,Angola,False,7,0.0,0.0
+AZ,Azerbaijan,False,19,0.0,0.0
+BH,Bahrain,False,1,0.0,0.0
+BO,Bolivia,False,14,0.0,0.0
+BQ,British Antarctic Territory,False,3,0.0,0.0
+BT,Bhutan,False,2,0.0,0.0
+BZ,Belize,False,2,0.0,0.0
+CF,Central African Republic,False,4,0.0,0.0
+CU,Cuba,False,23,0.0,0.0
+CW,Curaçao,False,4,1.0,0.0
 DJ,Djibouti,False,3,0.0,0.0
-YE,Yemen,False,1,0.0,0.0
+DO,Dominican Republic,False,4,0.0,0.0
+FJ,Fiji,False,4,0.0,0.0
+GI,Gibraltar,False,1,0.0,0.0
+GQ,Equatorial Guinea,False,1,0.0,0.0
+GU,Guam,False,2,0.0,0.0
+GW,Guinea-Bissau,False,6,0.0,0.0
+HK,Hong Kong,False,13,0.0,0.0
+HT,Haiti,False,1,0.0,0.0
 IM,Isle of Man,False,1,0.0,0.0
 IQ,Iraq,False,5,0.0,0.0
-PF,French Polynesia,False,3,0.0,0.0
-ST,São Tomé and Príncipe,False,7,0.0,0.0
-SS,South Sudan,False,1,0.0,0.0
-NC,New Caledonia,False,2,0.0,0.0
-BQ,British Antarctic Territory,False,3,0.0,0.0
-FJ,Fiji,False,4,0.0,0.0
-AF,Afghanistan,False,1,0.0,0.0
+IR,Iran,False,6,0.0,0.0
+KG,Kyrgyzstan,False,19,0.0,0.0
+KM,Comoros,False,1,0.0,0.0
+KW,Kuwait,False,1,0.0,0.0
+LA,Laos,False,2,0.0,0.0
+LI,Liechtenstein,False,5,0.0,0.0
+LR,Liberia,False,6,0.0,0.0
+LY,Libya,False,2,0.0,0.0
+MC,Monaco,False,5,0.0,0.0
 MN,Mongolia,False,4,0.0,0.0
-CU,Cuba,False,23,0.0,0.0
-HK,Hong Kong,False,13,0.0,0.0
+MO,Macao,False,2,0.0,0.0
+MP,Northern Mariana Islands,False,2,0.0,0.0
+MR,Mauritania,False,3,0.0,0.0
+NC,New Caledonia,False,2,0.0,0.0
+NU,Niue,False,1,0.0,0.0
+OM,Oman,False,1,0.0,0.0
+PA,Panama,False,2,0.0,0.0
+PF,French Polynesia,False,3,0.0,0.0
 PG,Papua New Guinea,False,4,0.0,0.0
-GI,Gibraltar,False,1,0.0,0.0
-VA,Holy See,False,2,0.0,0.0
-BH,Bahrain,False,1,0.0,0.0
+PR,Puerto Rico,False,1,0.0,0.0
+PS,Palestine*,False,5,0.0,0.0
+PY,Paraguay,False,3,0.0,0.0
+QA,Qatar,False,1,0.0,0.0
+SA,Saudi Arabia,False,15,0.0,0.0
+SB,Solomon Islands,False,1,0.0,0.0
 SC,Seychelles,False,2,0.0,0.0
-GW,Guinea-Bissau,False,6,0.0,0.0
-BZ,Belize,False,2,0.0,0.0
+SD,Sudan,False,1,0.0,0.0
+SR,Suriname,False,1,0.0,0.0
+SS,South Sudan,False,1,0.0,0.0
+ST,São Tomé and Príncipe,False,7,0.0,0.0
+SV,El Salvador,False,1,0.0,0.0
+SY,Syria,False,1,0.0,0.0
 TD,Chad,False,1,0.0,0.0
-AI,French Afar and Issas,False,1,0.0,0.0
+TJ,Tajikistan,False,7,0.0,0.0
+TM,Turkmenistan,False,5,0.0,0.0
+TW,Taiwan,False,34,0.0,0.0
+UY,Uruguay,False,17,0.0,0.0
+VA,Holy See,False,2,0.0,0.0
+VE,Venezuela,False,2,0.0,0.0
+VU,Vanuatu,False,1,0.0,0.0
+YE,Yemen,False,1,0.0,0.0

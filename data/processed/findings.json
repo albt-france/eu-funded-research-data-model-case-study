@@ -6,8 +6,8 @@
     "organisations": 36164,
     "countries": 188,
     "status": {
-      "SIGNED": 21928,
       "TERMINATED": 1077,
+      "SIGNED": 21928,
       "CLOSED": 1414
     }
   },

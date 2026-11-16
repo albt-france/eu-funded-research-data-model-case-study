@@ -7,4 +7,4 @@ WITH pc AS (
 SELECT a.country_code AS country_a, b.country_code AS country_b, COUNT(*) AS shared_projects
 FROM pc a JOIN pc b ON a.project_id = b.project_id AND a.country_code < b.country_code
 GROUP BY a.country_code, b.country_code
-ORDER BY shared_projects DESC;
+ORDER BY shared_projects DESC, a.country_code, b.country_code;
