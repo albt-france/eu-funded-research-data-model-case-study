@@ -1,0 +1,21 @@
+column,type,missing_pct,distinct,example
+projectID,number,0.0,24419,101069359
+projectAcronym,text,0.0,22630,
+organisationID,number,0.0,36164,912743326
+name,text,0.0,36117,
+shortName,text,25.1,20641,
+SME,text,0.1,2,true
+activityType,text,0.0,5,PRC
+city,text,0.1,11472,
+country,text,0.0,189,ES
+nutsCode,text,0.1,1542,ES523
+organizationURL,text,39.7,6282,
+contentUpdateDate,date,0.0,13224,2026-03-27 15:10:23
+rcn,number,0.0,36164,3146679
+order,number,0.0,175,2
+role,text,0.0,4,participant
+ecContribution,number,16.8,64293,299250
+netEcContribution,number,0.0,67330,299250
+totalCost,number,0.1,49376,299250
+endOfParticipation,text,0.0,2,false
+active,number,100.0,0,

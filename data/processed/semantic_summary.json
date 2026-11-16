@@ -1,0 +1,11 @@
+{
+  "triples": 114836,
+  "projects": 1263,
+  "organisations": 5300,
+  "memberships": 10725,
+  "concepts": 817,
+  "official_euroscivoc_concepts": 641,
+  "shacl_conforms": true,
+  "queries": 10,
+  "ttl_kb": 6240
+}

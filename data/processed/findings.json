@@ -1,0 +1,233 @@
+{
+  "HORIZON": {
+    "projects": 24419,
+    "eu_contribution": 65461593576.41,
+    "participations": 151382,
+    "organisations": 36164,
+    "countries": 188,
+    "status": {
+      "SIGNED": 21928,
+      "TERMINATED": 1077,
+      "CLOSED": 1414
+    }
+  },
+  "H2020": {
+    "projects": 35389,
+    "eu_contribution": 68333188636.87,
+    "participations": 179063,
+    "organisations": 41995,
+    "countries": 177
+  },
+  "eu27_share": 0.875116495806151,
+  "top5_country_share": 0.5284249767008389,
+  "top5_countries": [
+    "Germany",
+    "France",
+    "Spain",
+    "Italy",
+    "Netherlands"
+  ],
+  "org_type_share_he": {
+    "HES": 37.3,
+    "REC": 27.1,
+    "PRC": 25.3,
+    "OTH": 6.5,
+    "PUB": 3.8
+  },
+  "single_beneficiary_share_he": 0.468651459928744,
+  "consortium_by_family": {
+    "Marie Sklodowska-Curie": {
+      "projects": 8814,
+      "median_members": 2.0,
+      "avg_countries": 2.4
+    },
+    "ERC frontier research": {
+      "projects": 6999,
+      "median_members": 1.0,
+      "avg_countries": 1.1
+    },
+    "Research and innovation action": {
+      "projects": 3552,
+      "median_members": 13.0,
+      "avg_countries": 8.2
+    },
+    "Coordination and support action": {
+      "projects": 1885,
+      "median_members": 6.0,
+      "avg_countries": 5.4
+    },
+    "Innovation action": {
+      "projects": 1547,
+      "median_members": 17.0,
+      "avg_countries": 8.4
+    },
+    "EIC innovation": {
+      "projects": 1531,
+      "median_members": 1.0,
+      "avg_countries": 2.3
+    },
+    "Other": {
+      "projects": 49,
+      "median_members": 8.0,
+      "avg_countries": 6.1
+    },
+    "Co-fund": {
+      "projects": 42,
+      "median_members": 57.0,
+      "avg_countries": 20.7
+    }
+  },
+  "domain_he": {
+    "natural sciences": 19.49,
+    "(not classified)": 14.41,
+    "engineering and technology": 12.41,
+    "social sciences": 9.26,
+    "medical and health sciences": 6.59,
+    "agricultural sciences": 1.86,
+    "humanities": 1.43
+  },
+  "unclassified_share_he": 0.17813997297186618,
+  "network": {
+    "countries": 187,
+    "links": 5736,
+    "density": 0.33,
+    "top_strength": [
+      [
+        "DE",
+        43878
+      ],
+      [
+        "ES",
+        40557
+      ],
+      [
+        "IT",
+        40131
+      ],
+      [
+        "FR",
+        34880
+      ],
+      [
+        "BE",
+        31734
+      ],
+      [
+        "NL",
+        31111
+      ],
+      [
+        "GB",
+        29259
+      ],
+      [
+        "GR",
+        24013
+      ],
+      [
+        "PT",
+        18616
+      ],
+      [
+        "AT",
+        18606
+      ],
+      [
+        "CH",
+        18565
+      ],
+      [
+        "SE",
+        17961
+      ],
+      [
+        "FI",
+        16018
+      ],
+      [
+        "DK",
+        15640
+      ],
+      [
+        "PL",
+        15577
+      ],
+      [
+        "NO",
+        14241
+      ],
+      [
+        "IE",
+        13495
+      ],
+      [
+        "CZ",
+        11308
+      ],
+      [
+        "RO",
+        10140
+      ],
+      [
+        "SI",
+        8817
+      ],
+      [
+        "HU",
+        8118
+      ],
+      [
+        "CY",
+        7880
+      ],
+      [
+        "TR",
+        7110
+      ],
+      [
+        "EE",
+        6931
+      ],
+      [
+        "US",
+        6760
+      ],
+      [
+        "BG",
+        6135
+      ],
+      [
+        "LT",
+        5762
+      ],
+      [
+        "HR",
+        5563
+      ],
+      [
+        "SK",
+        5380
+      ],
+      [
+        "LU",
+        4746
+      ]
+    ]
+  },
+  "sme": {
+    "H2020": {
+      "sme_participation_pct": 19.8,
+      "sme_funding_pct": 16.8
+    },
+    "HORIZON": {
+      "sme_participation_pct": 17.7,
+      "sme_funding_pct": 16.1
+    }
+  },
+  "ai_drilldown": {
+    "domains_in_subtree": 21.0,
+    "projects": 1263.0,
+    "eu_contribution_bn": 4.05
+  },
+  "data_date": "2026-11-04"
+}

@@ -1,0 +1,17 @@
+Area,Finding,Size (Horizon Europe unless stated),Treatment
+Format,"Strict CSV parsers (DuckDB, pandas) stop on the file: unescaped quotes in free text, stray `"";""`","203 lines repaired, 0 rejected (all programmes)","Line reader splitting on `"";""`, extra pieces merged back into the free-text column (`src/cordis_io.py`, tested)"
+Amounts,"Decimal comma in project amounts, decimal point in organisation amounts","13,009 project values with a comma; 52,760 organisation values with a point",`parse_amount` accepts both; control total of the raw files = total loaded (check Q05)
+Amounts,Total cost = 0 for lump-sum and unit-cost grants (e.g. MSCA fellowships),"13,051 projects (53%)","Stored as NULL = not reported, never as a real zero"
+Amounts,Associated partners have empty contributions; affiliated entities have 0 gross but a net amount,"25,456 empty; 5,907 affiliated entities funded in the net column only",Empty = 0 for unfunded roles; the analysis uses the **net** contribution of funded roles
+Amounts,Participants' net contributions do not add up to the project maximum,325 projects (both programmes),"Reported by check Q07, not corrected (the source is authoritative)"
+Codes,"EU country codes instead of ISO (`EL` Greece, `UK` United Kingdom), Kosovo `XK`","14,797 participations",Mapped to ISO 3166-1 alpha-2 with the EU country authority table
+Codes,Multi-valued country (`DE;HU`) and missing country,2 multi-valued; 24 missing,First code kept and logged; missing left NULL (check Q09)
+Keys,"`(projectID, order)` is not unique; `(projectID, organisationID, role)` is not unique either","4,245 and 50 duplicates","Natural key = (project, organisation, role, order): unique for all 151,382 rows; an organisation can leave and re-join (check Q14)"
+Organisations,SME status of the same PIC changes between projects,340 PICs,"SME stored on `participation`, not on `organisation` (it is a fact about the participation, at that time)"
+Organisations,"Same name, several PICs (possible duplicate registrations)",42 exact names; 190 normalised name + country groups,"Reported as candidates (Q10), **not merged**: the PIC is the EU identifier"
+Classification,Projects without any EuroSciVoc domain,"4,350 projects (18%)","Kept, shown as '(not classified)' in every breakdown"
+Classification,CORDIS domain codes deeper than the published EuroSciVoc; one code without any label,103 codes not in EU Vocabularies; 1 unlabelled,Local concept linked to its official parent; explicit 'unlabelled' label (Q18)
+Dates,Grant signed after the project start date,"1,092 projects",Valid (start can precede signature); reported (Q11)
+H2020,Several legal bases in `project.legalBasis`; one project without funding scheme; projects without start date,1; 1; 12,Main part from `legalBasis.csv` (`uniqueProgrammePart`); 'NOT_REPORTED' scheme; NULL dates
+Links,Duplicate web-link ids (within and across programmes),"1,258",First kept
+Personal data,"Address, VAT number, coordinates and contact form link in `organization.csv`",5 columns,"Dropped at staging, before any storage (tested)"
