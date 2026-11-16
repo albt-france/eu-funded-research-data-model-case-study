@@ -1,0 +1,16 @@
+duckdb==1.5.6
+pandas==2.3.3
+pyarrow==25.0.1
+requests==2.34.2
+rdflib==7.6.0
+pyshacl==0.40.2
+networkx==3.4.2
+plotly==7.1.0
+matplotlib==3.10.9
+Jinja2==3.1.6
+pypdf==7.1.0
+pglast==8.8
+pytest==9.2.0
+nbformat==5.11.1
+nbconvert==7.17.2
+ipykernel==7.3.0

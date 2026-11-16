@@ -1,0 +1,284 @@
+country,alpha3,alpha2,eu_code,label
+http://publications.europa.eu/resource/authority/country/ABW,ABW,AW,AW,Aruba
+http://publications.europa.eu/resource/authority/country/AFG,AFG,AF,AF,Afghanistan
+http://publications.europa.eu/resource/authority/country/AFI,AFI,AI,,French Afar and Issas
+http://publications.europa.eu/resource/authority/country/AGO,AGO,AO,AO,Angola
+http://publications.europa.eu/resource/authority/country/AIA,AIA,AI,AI,Anguilla
+http://publications.europa.eu/resource/authority/country/ALA,ALA,AX,AX,Åland Islands
+http://publications.europa.eu/resource/authority/country/ALB,ALB,AL,AL,Albania
+http://publications.europa.eu/resource/authority/country/AND,AND,AD,AD,Andorra
+http://publications.europa.eu/resource/authority/country/ANT,ANT,AN,,Netherlands Antilles
+http://publications.europa.eu/resource/authority/country/ARE,ARE,AE,AE,United Arab Emirates
+http://publications.europa.eu/resource/authority/country/ARG,ARG,AR,AR,Argentina
+http://publications.europa.eu/resource/authority/country/ARM,ARM,AM,AM,Armenia
+http://publications.europa.eu/resource/authority/country/ASM,ASM,AS,AS,American Samoa
+http://publications.europa.eu/resource/authority/country/ATA,ATA,AQ,AQ,Antarctica
+http://publications.europa.eu/resource/authority/country/ATB,ATB,BQ,,British Antarctic Territory
+http://publications.europa.eu/resource/authority/country/ATF,ATF,TF,TF,French Southern and Antarctic Lands
+http://publications.europa.eu/resource/authority/country/ATG,ATG,AG,AG,Antigua and Barbuda
+http://publications.europa.eu/resource/authority/country/ATN,ATN,NQ,,Dronning Maud Land
+http://publications.europa.eu/resource/authority/country/AUS,AUS,AU,AU,Australia
+http://publications.europa.eu/resource/authority/country/AUT,AUT,AT,AT,Austria
+http://publications.europa.eu/resource/authority/country/AZE,AZE,AZ,AZ,Azerbaijan
+http://publications.europa.eu/resource/authority/country/BDI,BDI,BI,BI,Burundi
+http://publications.europa.eu/resource/authority/country/BEL,BEL,BE,BE,Belgium
+http://publications.europa.eu/resource/authority/country/BEN,BEN,BJ,BJ,Benin
+http://publications.europa.eu/resource/authority/country/BES,BES,BQ,,"Bonaire, Sint Eustatius and Saba"
+http://publications.europa.eu/resource/authority/country/BFA,BFA,BF,BF,Burkina Faso
+http://publications.europa.eu/resource/authority/country/BGD,BGD,BD,BD,Bangladesh
+http://publications.europa.eu/resource/authority/country/BGR,BGR,BG,BG,Bulgaria
+http://publications.europa.eu/resource/authority/country/BHR,BHR,BH,BH,Bahrain
+http://publications.europa.eu/resource/authority/country/BHS,BHS,BS,BS,Bahamas
+http://publications.europa.eu/resource/authority/country/BIH,BIH,BA,BA,Bosnia and Herzegovina
+http://publications.europa.eu/resource/authority/country/BLM,BLM,BL,BL,Saint Barthélemy
+http://publications.europa.eu/resource/authority/country/BLR,BLR,BY,BY,Belarus
+http://publications.europa.eu/resource/authority/country/BLZ,BLZ,BZ,BZ,Belize
+http://publications.europa.eu/resource/authority/country/BMU,BMU,BM,BM,Bermuda
+http://publications.europa.eu/resource/authority/country/BOL,BOL,BO,BO,Bolivia
+http://publications.europa.eu/resource/authority/country/BRA,BRA,BR,BR,Brazil
+http://publications.europa.eu/resource/authority/country/BRB,BRB,BB,BB,Barbados
+http://publications.europa.eu/resource/authority/country/BRN,BRN,BN,BN,Brunei
+http://publications.europa.eu/resource/authority/country/BTN,BTN,BT,BT,Bhutan
+http://publications.europa.eu/resource/authority/country/BUR,BUR,BU,,Burma
+http://publications.europa.eu/resource/authority/country/BVT,BVT,BV,BV,Bouvet Island
+http://publications.europa.eu/resource/authority/country/BWA,BWA,BW,BW,Botswana
+http://publications.europa.eu/resource/authority/country/BYS,BYS,BY,,Belarus
+http://publications.europa.eu/resource/authority/country/CAF,CAF,CF,CF,Central African Republic
+http://publications.europa.eu/resource/authority/country/CAN,CAN,CA,CA,Canada
+http://publications.europa.eu/resource/authority/country/CCK,CCK,CC,CC,Cocos (Keeling) Islands
+http://publications.europa.eu/resource/authority/country/CHE,CHE,CH,CH,Switzerland
+http://publications.europa.eu/resource/authority/country/CHL,CHL,CL,CL,Chile
+http://publications.europa.eu/resource/authority/country/CHN,CHN,CN,CN,China
+http://publications.europa.eu/resource/authority/country/CIV,CIV,CI,CI,Côte d’Ivoire
+http://publications.europa.eu/resource/authority/country/CMR,CMR,CM,CM,Cameroon
+http://publications.europa.eu/resource/authority/country/COD,COD,CD,CD,Democratic Republic of the Congo
+http://publications.europa.eu/resource/authority/country/COG,COG,CG,CG,Congo
+http://publications.europa.eu/resource/authority/country/COK,COK,CK,CK,Cook Islands
+http://publications.europa.eu/resource/authority/country/COL,COL,CO,CO,Colombia
+http://publications.europa.eu/resource/authority/country/COM,COM,KM,KM,Comoros
+http://publications.europa.eu/resource/authority/country/CPT,CPT,CP,CP,Clipperton
+http://publications.europa.eu/resource/authority/country/CPV,CPV,CV,CV,Cabo Verde
+http://publications.europa.eu/resource/authority/country/CRI,CRI,CR,CR,Costa Rica
+http://publications.europa.eu/resource/authority/country/CRQ,CRQ,CQ,,Sark
+http://publications.europa.eu/resource/authority/country/CSK,CSK,CS,,Czechoslovakia
+http://publications.europa.eu/resource/authority/country/CTE,CTE,CT,,Canton and Enderbury Islands
+http://publications.europa.eu/resource/authority/country/CUB,CUB,CU,CU,Cuba
+http://publications.europa.eu/resource/authority/country/CUW,CUW,CW,CW,Curaçao
+http://publications.europa.eu/resource/authority/country/CXR,CXR,CX,CX,Christmas Island
+http://publications.europa.eu/resource/authority/country/CYM,CYM,KY,KY,Cayman Islands
+http://publications.europa.eu/resource/authority/country/CYP,CYP,CY,CY,Cyprus
+http://publications.europa.eu/resource/authority/country/CZE,CZE,CZ,CZ,Czechia
+http://publications.europa.eu/resource/authority/country/DDR,DDR,DD,,German Democratic Republic
+http://publications.europa.eu/resource/authority/country/DEU,DEU,DE,DE,Germany
+http://publications.europa.eu/resource/authority/country/DHY,DHY,DY,,Dahomey
+http://publications.europa.eu/resource/authority/country/DJI,DJI,DJ,DJ,Djibouti
+http://publications.europa.eu/resource/authority/country/DMA,DMA,DM,DM,Dominica
+http://publications.europa.eu/resource/authority/country/DNK,DNK,DK,DK,Denmark
+http://publications.europa.eu/resource/authority/country/DOM,DOM,DO,DO,Dominican Republic
+http://publications.europa.eu/resource/authority/country/DZA,DZA,DZ,DZ,Algeria
+http://publications.europa.eu/resource/authority/country/ECU,ECU,EC,EC,Ecuador
+http://publications.europa.eu/resource/authority/country/EGY,EGY,EG,EG,Egypt
+http://publications.europa.eu/resource/authority/country/ERI,ERI,ER,ER,Eritrea
+http://publications.europa.eu/resource/authority/country/ESH,ESH,EH,EH,Western Sahara
+http://publications.europa.eu/resource/authority/country/ESP,ESP,ES,ES,Spain
+http://publications.europa.eu/resource/authority/country/EST,EST,EE,EE,Estonia
+http://publications.europa.eu/resource/authority/country/ETH,ETH,ET,ET,Ethiopia
+http://publications.europa.eu/resource/authority/country/EUR,EUR,EU,,European Union
+http://publications.europa.eu/resource/authority/country/FIN,FIN,FI,FI,Finland
+http://publications.europa.eu/resource/authority/country/FJI,FJI,FJ,FJ,Fiji
+http://publications.europa.eu/resource/authority/country/FLK,FLK,FK,FK,Falkland Islands
+http://publications.europa.eu/resource/authority/country/FRA,FRA,FR,FR,France
+http://publications.europa.eu/resource/authority/country/FRO,FRO,FO,FO,Faroes
+http://publications.europa.eu/resource/authority/country/FSM,FSM,FM,FM,Micronesia
+http://publications.europa.eu/resource/authority/country/FXX,FXX,FX,,Metropolitan France
+http://publications.europa.eu/resource/authority/country/GAB,GAB,GA,GA,Gabon
+http://publications.europa.eu/resource/authority/country/GBR,GBR,GB,UK,United Kingdom
+http://publications.europa.eu/resource/authority/country/GEL,GEL,GE,,Gilbert and Ellice Islands
+http://publications.europa.eu/resource/authority/country/GEO,GEO,GE,GE,Georgia
+http://publications.europa.eu/resource/authority/country/GGY,GGY,GG,GG,Guernsey
+http://publications.europa.eu/resource/authority/country/GHA,GHA,GH,GH,Ghana
+http://publications.europa.eu/resource/authority/country/GIB,GIB,GI,GI,Gibraltar
+http://publications.europa.eu/resource/authority/country/GIN,GIN,GN,GN,Guinea
+http://publications.europa.eu/resource/authority/country/GLP,GLP,GP,GP,Guadeloupe
+http://publications.europa.eu/resource/authority/country/GMB,GMB,GM,GM,The Gambia
+http://publications.europa.eu/resource/authority/country/GNB,GNB,GW,GW,Guinea-Bissau
+http://publications.europa.eu/resource/authority/country/GNQ,GNQ,GQ,GQ,Equatorial Guinea
+http://publications.europa.eu/resource/authority/country/GRC,GRC,GR,EL,Greece
+http://publications.europa.eu/resource/authority/country/GRD,GRD,GD,GD,Grenada
+http://publications.europa.eu/resource/authority/country/GRL,GRL,GL,GL,Greenland
+http://publications.europa.eu/resource/authority/country/GTM,GTM,GT,GT,Guatemala
+http://publications.europa.eu/resource/authority/country/GUF,GUF,GF,GF,French Guiana
+http://publications.europa.eu/resource/authority/country/GUM,GUM,GU,GU,Guam
+http://publications.europa.eu/resource/authority/country/GUY,GUY,GY,GY,Guyana
+http://publications.europa.eu/resource/authority/country/HKG,HKG,HK,HK,Hong Kong
+http://publications.europa.eu/resource/authority/country/HMD,HMD,HM,HM,Heard Island and McDonald Islands
+http://publications.europa.eu/resource/authority/country/HND,HND,HN,HN,Honduras
+http://publications.europa.eu/resource/authority/country/HRV,HRV,HR,HR,Croatia
+http://publications.europa.eu/resource/authority/country/HTI,HTI,HT,HT,Haiti
+http://publications.europa.eu/resource/authority/country/HUN,HUN,HU,HU,Hungary
+http://publications.europa.eu/resource/authority/country/HVO,HVO,HV,,Upper Volta
+http://publications.europa.eu/resource/authority/country/IDN,IDN,ID,ID,Indonesia
+http://publications.europa.eu/resource/authority/country/IMN,IMN,IM,IM,Isle of Man
+http://publications.europa.eu/resource/authority/country/IND,IND,IN,IN,India
+http://publications.europa.eu/resource/authority/country/IOT,IOT,IO,IO,British Indian Ocean Territory
+http://publications.europa.eu/resource/authority/country/IRL,IRL,IE,IE,Ireland
+http://publications.europa.eu/resource/authority/country/IRN,IRN,IR,IR,Iran
+http://publications.europa.eu/resource/authority/country/IRQ,IRQ,IQ,IQ,Iraq
+http://publications.europa.eu/resource/authority/country/ISL,ISL,IS,IS,Iceland
+http://publications.europa.eu/resource/authority/country/ISR,ISR,IL,IL,Israel
+http://publications.europa.eu/resource/authority/country/ITA,ITA,IT,IT,Italy
+http://publications.europa.eu/resource/authority/country/JAM,JAM,JM,JM,Jamaica
+http://publications.europa.eu/resource/authority/country/JEY,JEY,JE,JE,Jersey
+http://publications.europa.eu/resource/authority/country/JOR,JOR,JO,JO,Jordan
+http://publications.europa.eu/resource/authority/country/JPN,JPN,JP,JP,Japan
+http://publications.europa.eu/resource/authority/country/JTN,JTN,JT,,Johnston Island
+http://publications.europa.eu/resource/authority/country/KAZ,KAZ,KZ,KZ,Kazakhstan
+http://publications.europa.eu/resource/authority/country/KEN,KEN,KE,KE,Kenya
+http://publications.europa.eu/resource/authority/country/KGZ,KGZ,KG,KG,Kyrgyzstan
+http://publications.europa.eu/resource/authority/country/KHM,KHM,KH,KH,Cambodia
+http://publications.europa.eu/resource/authority/country/KIR,KIR,KI,KI,Kiribati
+http://publications.europa.eu/resource/authority/country/KNA,KNA,KN,KN,Saint Kitts and Nevis
+http://publications.europa.eu/resource/authority/country/KOR,KOR,KR,KR,South Korea
+http://publications.europa.eu/resource/authority/country/KWT,KWT,KW,KW,Kuwait
+http://publications.europa.eu/resource/authority/country/LAO,LAO,LA,LA,Laos
+http://publications.europa.eu/resource/authority/country/LBN,LBN,LB,LB,Lebanon
+http://publications.europa.eu/resource/authority/country/LBR,LBR,LR,LR,Liberia
+http://publications.europa.eu/resource/authority/country/LBY,LBY,LY,LY,Libya
+http://publications.europa.eu/resource/authority/country/LCA,LCA,LC,LC,Saint Lucia
+http://publications.europa.eu/resource/authority/country/LIE,LIE,LI,LI,Liechtenstein
+http://publications.europa.eu/resource/authority/country/LKA,LKA,LK,LK,Sri Lanka
+http://publications.europa.eu/resource/authority/country/LSO,LSO,LS,LS,Lesotho
+http://publications.europa.eu/resource/authority/country/LTU,LTU,LT,LT,Lithuania
+http://publications.europa.eu/resource/authority/country/LUX,LUX,LU,LU,Luxembourg
+http://publications.europa.eu/resource/authority/country/LVA,LVA,LV,LV,Latvia
+http://publications.europa.eu/resource/authority/country/MAC,MAC,MO,MO,Macao
+http://publications.europa.eu/resource/authority/country/MAF,MAF,MF,MF,Saint Martin
+http://publications.europa.eu/resource/authority/country/MAR,MAR,MA,MA,Morocco
+http://publications.europa.eu/resource/authority/country/MCO,MCO,MC,MC,Monaco
+http://publications.europa.eu/resource/authority/country/MDA,MDA,MD,MD,Moldova
+http://publications.europa.eu/resource/authority/country/MDG,MDG,MG,MG,Madagascar
+http://publications.europa.eu/resource/authority/country/MDV,MDV,MV,MV,Maldives
+http://publications.europa.eu/resource/authority/country/MEX,MEX,MX,MX,Mexico
+http://publications.europa.eu/resource/authority/country/MHL,MHL,MH,MH,Marshall Islands
+http://publications.europa.eu/resource/authority/country/MID,MID,MI,,Midway Islands
+http://publications.europa.eu/resource/authority/country/MKD,MKD,MK,MK,North Macedonia
+http://publications.europa.eu/resource/authority/country/MLI,MLI,ML,ML,Mali
+http://publications.europa.eu/resource/authority/country/MLT,MLT,MT,MT,Malta
+http://publications.europa.eu/resource/authority/country/MMR,MMR,MM,MM,Myanmar/Burma
+http://publications.europa.eu/resource/authority/country/MNE,MNE,ME,ME,Montenegro
+http://publications.europa.eu/resource/authority/country/MNG,MNG,MN,MN,Mongolia
+http://publications.europa.eu/resource/authority/country/MNP,MNP,MP,MP,Northern Mariana Islands
+http://publications.europa.eu/resource/authority/country/MOZ,MOZ,MZ,MZ,Mozambique
+http://publications.europa.eu/resource/authority/country/MRT,MRT,MR,MR,Mauritania
+http://publications.europa.eu/resource/authority/country/MSR,MSR,MS,MS,Montserrat
+http://publications.europa.eu/resource/authority/country/MTQ,MTQ,MQ,MQ,Martinique
+http://publications.europa.eu/resource/authority/country/MUS,MUS,MU,MU,Mauritius
+http://publications.europa.eu/resource/authority/country/MWI,MWI,MW,MW,Malawi
+http://publications.europa.eu/resource/authority/country/MYS,MYS,MY,MY,Malaysia
+http://publications.europa.eu/resource/authority/country/MYT,MYT,YT,YT,Mayotte
+http://publications.europa.eu/resource/authority/country/NAM,NAM,NA,NA,Namibia
+http://publications.europa.eu/resource/authority/country/NCL,NCL,NC,NC,New Caledonia
+http://publications.europa.eu/resource/authority/country/NER,NER,NE,NE,Niger
+http://publications.europa.eu/resource/authority/country/NFK,NFK,NF,NF,Norfolk Island
+http://publications.europa.eu/resource/authority/country/NGA,NGA,NG,NG,Nigeria
+http://publications.europa.eu/resource/authority/country/NHB,NHB,NH,,New Hebrides
+http://publications.europa.eu/resource/authority/country/NIC,NIC,NI,NI,Nicaragua
+http://publications.europa.eu/resource/authority/country/NIU,NIU,NU,NU,Niue
+http://publications.europa.eu/resource/authority/country/NLD,NLD,NL,NL,Netherlands
+http://publications.europa.eu/resource/authority/country/NOR,NOR,NO,NO,Norway
+http://publications.europa.eu/resource/authority/country/NPL,NPL,NP,NP,Nepal
+http://publications.europa.eu/resource/authority/country/NRU,NRU,NR,NR,Naoero
+http://publications.europa.eu/resource/authority/country/NTZ,NTZ,NT,,Neutral Zone
+http://publications.europa.eu/resource/authority/country/NZL,NZL,NZ,NZ,New Zealand
+http://publications.europa.eu/resource/authority/country/OMN,OMN,OM,OM,Oman
+http://publications.europa.eu/resource/authority/country/PAK,PAK,PK,PK,Pakistan
+http://publications.europa.eu/resource/authority/country/PAN,PAN,PA,PA,Panama
+http://publications.europa.eu/resource/authority/country/PCI,PCI,PC,,Trust Territory of the Pacific Islands
+http://publications.europa.eu/resource/authority/country/PCN,PCN,PN,PN,Pitcairn Islands
+http://publications.europa.eu/resource/authority/country/PCZ,PCZ,PZ,,Panama Canal Zone
+http://publications.europa.eu/resource/authority/country/PER,PER,PE,PE,Peru
+http://publications.europa.eu/resource/authority/country/PHL,PHL,PH,PH,Philippines
+http://publications.europa.eu/resource/authority/country/PLW,PLW,PW,PW,Palau
+http://publications.europa.eu/resource/authority/country/PNG,PNG,PG,PG,Papua New Guinea
+http://publications.europa.eu/resource/authority/country/POL,POL,PL,PL,Poland
+http://publications.europa.eu/resource/authority/country/PRI,PRI,PR,PR,Puerto Rico
+http://publications.europa.eu/resource/authority/country/PRK,PRK,KP,KP,North Korea
+http://publications.europa.eu/resource/authority/country/PRT,PRT,PT,PT,Portugal
+http://publications.europa.eu/resource/authority/country/PRY,PRY,PY,PY,Paraguay
+http://publications.europa.eu/resource/authority/country/PSE,PSE,PS,,Palestine*
+http://publications.europa.eu/resource/authority/country/PUS,PUS,PU,,US Miscellaneous Pacific Islands
+http://publications.europa.eu/resource/authority/country/PYF,PYF,PF,PF,French Polynesia
+http://publications.europa.eu/resource/authority/country/QAT,QAT,QA,QA,Qatar
+http://publications.europa.eu/resource/authority/country/REU,REU,RE,RE,Réunion
+http://publications.europa.eu/resource/authority/country/RHO,RHO,RH,,Southern Rhodesia
+http://publications.europa.eu/resource/authority/country/ROU,ROU,RO,RO,Romania
+http://publications.europa.eu/resource/authority/country/RUS,RUS,RU,RU,Russia
+http://publications.europa.eu/resource/authority/country/RWA,RWA,RW,RW,Rwanda
+http://publications.europa.eu/resource/authority/country/SAU,SAU,SA,SA,Saudi Arabia
+http://publications.europa.eu/resource/authority/country/SCG,SCG,CS,,Serbia and Montenegro
+http://publications.europa.eu/resource/authority/country/SDN,SDN,SD,SD,Sudan
+http://publications.europa.eu/resource/authority/country/SEN,SEN,SN,SN,Senegal
+http://publications.europa.eu/resource/authority/country/SGP,SGP,SG,SG,Singapore
+http://publications.europa.eu/resource/authority/country/SGS,SGS,GS,GS,South Georgia and the South Sandwich Islands
+http://publications.europa.eu/resource/authority/country/SHN,SHN,SH,SH,"Saint Helena, Ascension and Tristan da Cunha"
+http://publications.europa.eu/resource/authority/country/SJM,SJM,SJ,SJ,Svalbard and Jan Mayen
+http://publications.europa.eu/resource/authority/country/SKM,SKM,SK,,Sikkim
+http://publications.europa.eu/resource/authority/country/SLB,SLB,SB,SB,Solomon Islands
+http://publications.europa.eu/resource/authority/country/SLE,SLE,SL,SL,Sierra Leone
+http://publications.europa.eu/resource/authority/country/SLV,SLV,SV,SV,El Salvador
+http://publications.europa.eu/resource/authority/country/SMR,SMR,SM,SM,San Marino
+http://publications.europa.eu/resource/authority/country/SOM,SOM,SO,SO,Somalia
+http://publications.europa.eu/resource/authority/country/SPM,SPM,PM,PM,Saint Pierre and Miquelon
+http://publications.europa.eu/resource/authority/country/SRB,SRB,RS,RS,Serbia
+http://publications.europa.eu/resource/authority/country/SSD,SSD,SS,SS,South Sudan
+http://publications.europa.eu/resource/authority/country/STP,STP,ST,ST,São Tomé and Príncipe
+http://publications.europa.eu/resource/authority/country/SUN,SUN,SU,,Soviet Union
+http://publications.europa.eu/resource/authority/country/SUR,SUR,SR,SR,Suriname
+http://publications.europa.eu/resource/authority/country/SVK,SVK,SK,SK,Slovakia
+http://publications.europa.eu/resource/authority/country/SVN,SVN,SI,SI,Slovenia
+http://publications.europa.eu/resource/authority/country/SWE,SWE,SE,SE,Sweden
+http://publications.europa.eu/resource/authority/country/SWZ,SWZ,SZ,SZ,Eswatini
+http://publications.europa.eu/resource/authority/country/SXM,SXM,SX,SX,Sint Maarten
+http://publications.europa.eu/resource/authority/country/SYC,SYC,SC,SC,Seychelles
+http://publications.europa.eu/resource/authority/country/SYR,SYR,SY,SY,Syria
+http://publications.europa.eu/resource/authority/country/TCA,TCA,TC,TC,Turks and Caicos Islands
+http://publications.europa.eu/resource/authority/country/TCD,TCD,TD,TD,Chad
+http://publications.europa.eu/resource/authority/country/TGO,TGO,TG,TG,Togo
+http://publications.europa.eu/resource/authority/country/THA,THA,TH,TH,Thailand
+http://publications.europa.eu/resource/authority/country/TJK,TJK,TJ,TJ,Tajikistan
+http://publications.europa.eu/resource/authority/country/TKL,TKL,TK,TK,Tokelau
+http://publications.europa.eu/resource/authority/country/TKM,TKM,TM,TM,Turkmenistan
+http://publications.europa.eu/resource/authority/country/TLS,TLS,TL,TL,Timor-Leste
+http://publications.europa.eu/resource/authority/country/TMP,TMP,TP,,East Timor
+http://publications.europa.eu/resource/authority/country/TON,TON,TO,TO,Tonga
+http://publications.europa.eu/resource/authority/country/TTO,TTO,TT,TT,Trinidad and Tobago
+http://publications.europa.eu/resource/authority/country/TUN,TUN,TN,TN,Tunisia
+http://publications.europa.eu/resource/authority/country/TUR,TUR,TR,TR,Türkiye
+http://publications.europa.eu/resource/authority/country/TUV,TUV,TV,TV,Tuvalu
+http://publications.europa.eu/resource/authority/country/TWN,TWN,TW,TW,Taiwan
+http://publications.europa.eu/resource/authority/country/TZA,TZA,TZ,TZ,Tanzania
+http://publications.europa.eu/resource/authority/country/UGA,UGA,UG,UG,Uganda
+http://publications.europa.eu/resource/authority/country/UKR,UKR,UA,UA,Ukraine
+http://publications.europa.eu/resource/authority/country/UMI,UMI,UM,UM,United States Minor Outlying Islands
+http://publications.europa.eu/resource/authority/country/URY,URY,UY,UY,Uruguay
+http://publications.europa.eu/resource/authority/country/USA,USA,US,US,United States
+http://publications.europa.eu/resource/authority/country/UZB,UZB,UZ,UZ,Uzbekistan
+http://publications.europa.eu/resource/authority/country/VAT,VAT,VA,VA,Holy See
+http://publications.europa.eu/resource/authority/country/VCT,VCT,VC,VC,Saint Vincent and the Grenadines
+http://publications.europa.eu/resource/authority/country/VDR,VDR,VD,,Democratic Republic of Vietnam
+http://publications.europa.eu/resource/authority/country/VEN,VEN,VE,VE,Venezuela
+http://publications.europa.eu/resource/authority/country/VGB,VGB,VG,VG,British Virgin Islands
+http://publications.europa.eu/resource/authority/country/VIR,VIR,VI,VI,US Virgin Islands
+http://publications.europa.eu/resource/authority/country/VNM,VNM,VN,VN,Viet Nam
+http://publications.europa.eu/resource/authority/country/VUT,VUT,VU,VU,Vanuatu
+http://publications.europa.eu/resource/authority/country/WAK,WAK,WK,,Wake Island
+http://publications.europa.eu/resource/authority/country/WLF,WLF,WF,WF,Wallis and Futuna
+http://publications.europa.eu/resource/authority/country/WSM,WSM,WS,WS,Samoa
+http://publications.europa.eu/resource/authority/country/XIC,XIC,IC,,Canary Islands
+http://publications.europa.eu/resource/authority/country/YEM,YEM,YE,YE,Yemen
+http://publications.europa.eu/resource/authority/country/YMD,YMD,YD,,North Yemen
+http://publications.europa.eu/resource/authority/country/YUG,YUG,YU,,Yugoslavia
+http://publications.europa.eu/resource/authority/country/ZAF,ZAF,ZA,ZA,South Africa
+http://publications.europa.eu/resource/authority/country/ZAR,ZAR,ZR,,Zaire
+http://publications.europa.eu/resource/authority/country/ZMB,ZMB,ZM,ZM,Zambia
+http://publications.europa.eu/resource/authority/country/ZWE,ZWE,ZW,ZW,Zimbabwe

@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX euvoc: <http://publications.europa.eu/ontology/euvoc#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+# Q1. The top concepts of EuroSciVoc and how many concepts sit below each one (transitive skos:broader+ path)
+SELECT ?top ?label (COUNT(DISTINCT ?c) AS ?descendants) WHERE {
+  GRAPH <http://publications.europa.eu/resource/authority/euroscivoc> {
+    ?top skos:topConceptOf <http://data.europa.eu/8mn/euroscivoc#40c0f173-baa3-48a3-9fe6-d6e8fb366a00> ; skos:prefLabel ?label .
+    ?c skos:broader+ ?top .
+    FILTER (lang(?label) = 'en')
+  }
+} GROUP BY ?top ?label ORDER BY DESC(?descendants)
