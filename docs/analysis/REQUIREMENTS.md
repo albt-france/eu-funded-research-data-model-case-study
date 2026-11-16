@@ -92,7 +92,7 @@ Stories 13 and 14 are about data the open data does not contain: they shape the 
 |---|---|---|
 | NFR1 Quality | A load is rejected if row counts or the EU contribution total differ from the raw files, or if a project has no or several coordinators. | 18 checks after each load (`src/quality.py`), FAIL stops, WARN is reported ([QA_REPORT.md](QA_REPORT.md)) |
 | NFR2 Traceability | Every figure can be traced to a file, a download date and a rule. | `load_batch`, `download_log.csv`, cleaning log, figures read from `data/processed/` |
-| NFR3 Refresh | A new CORDIS release is loaded with two commands; the load is idempotent (full rebuild). | `python src/download.py`, `python src/load.py`; about two minutes on a laptop for both programmes |
+| NFR3 Refresh | A new CORDIS release is loaded with two commands; the load is idempotent (full rebuild). | `python src/download.py`, `python src/load.py`; 38 seconds measured on a laptop for both programmes (stage, load, checks) |
 | NFR4 Data protection | No personal data is stored or published. | Personal and address columns dropped at staging (tested); company names not published in the graph |
 | NFR5 Integrity | Business rules are enforced by the database, not only by code. | Keys, foreign keys, checks (DuckDB and PostgreSQL); partial unique index for one coordinator (PostgreSQL) |
 | NFR6 Portability | The model runs on DuckDB and PostgreSQL. | `schema.sql` applied to PostgreSQL 16 in CI |
