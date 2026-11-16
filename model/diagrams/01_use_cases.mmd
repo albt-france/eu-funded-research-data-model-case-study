@@ -1,0 +1,29 @@
+%% UML use case diagram (drawn as a Mermaid flowchart: actors on the sides, use cases inside the system boundary)
+flowchart LR
+  PM(["Programme manager"])
+  PA(["Policy analyst"])
+  PO(["Project officer"])
+  DS(["Data steward"])
+  EU(["External data user"])
+  subgraph SYS["EU research programme data system"]
+    UC1(("Follow funding<br/>by pillar and year"))
+    UC2(("Compare countries,<br/>organisation types, SMEs"))
+    UC3(("Explore a domain<br/>and its sub-domains"))
+    UC4(("Analyse cooperation<br/>between countries"))
+    UC5(("Inspect a grant:<br/>consortium and roles"))
+    UC6(("Follow reporting<br/>periods - no open data"))
+    UC7(("Load a CORDIS release"))
+    UC8(("Run quality checks"))
+    UC9(("Query the graph<br/>with SPARQL"))
+  end
+  PM --- UC1
+  PM --- UC5
+  PA --- UC2
+  PA --- UC3
+  PA --- UC4
+  PO --- UC5
+  PO --- UC6
+  DS --- UC7
+  UC7 -. "include" .-> UC8
+  EU --- UC9
+  UC3 -. "extend" .-> UC9

@@ -1,0 +1,36 @@
+%% UML activity diagram: life cycle of a Horizon Europe grant, with swimlanes
+%% Sources: Regulation (EU) 2021/695 (Articles 22, 28, 29, 31), Funding & Tenders Portal Online Manual
+flowchart TB
+  start((start))
+  subgraph CO["Consortium: coordinator and beneficiaries"]
+    A2["Register PICs,<br/>submit proposal"]
+    A8["Implement the action:<br/>deliverables, milestones"]
+    A10["Periodic report: technical<br/>and financial, within 60 days"]
+    A13{"Last<br/>period?"}
+  end
+  subgraph GA["Granting authority: Commission or agency"]
+    A1["Publish work programme<br/>and calls with topics"]
+    A3{"Admissible<br/>and eligible?"}
+    A5{"Funded?"}
+    A6["Grant preparation"]
+    A7["Sign grant agreement<br/>within 8 months of deadline"]
+    A9["Pay pre-financing"]
+    A11{"Report<br/>accepted?"}
+    A12["Interim payment<br/>within 90 days"]
+    A14["Final payment:<br/>balance"]
+  end
+  subgraph EX["Independent experts"]
+    A4["Evaluate: excellence, impact,<br/>quality of implementation"]
+  end
+  stop((end))
+  rej((not funded))
+  start --> A1 --> A2 --> A3
+  A3 -- no --> rej
+  A3 -- yes --> A4 --> A5
+  A5 -- "no, informed within 5 months" --> rej
+  A5 -- yes --> A6 --> A7 --> A9 --> A8
+  A8 --> A10 --> A11
+  A11 -- "no: corrections" --> A10
+  A11 -- yes --> A13
+  A13 -- no --> A12 --> A8
+  A13 -- yes --> A14 --> stop

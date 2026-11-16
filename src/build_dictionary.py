@@ -1,0 +1,97 @@
+"""Generate model/DATA_DICTIONARY.md from the database catalogue (types, nullability, keys, comments) plus the source and
+cleaning rule of each column. The dictionary can never drift from the DDL: it is read from the database built with it.
+Usage: python src/build_dictionary.py [--db data/cordis.duckdb]
+"""
+import sys
+from pathlib import Path
+
+import duckdb
+
+from config import DB, ROOT
+
+TABLE_SOURCE = {
+    "framework_programme": "legal acts (config.py)", "programme_part": "legalBasis.csv + pillars from the legal acts",
+    "country": "EU Vocabularies country authority table (SPARQL)", "organisation_type": "CORDIS activity types",
+    "participant_role": "CORDIS roles, grouped", "funding_scheme": "project.csv fundingScheme", "science_domain": "euroSciVoc.csv + EuroSciVoc (SPARQL)",
+    "load_batch": "pipeline", "call": "project.csv masterCall", "topic": "topics.csv", "project": "project.csv",
+    "project_programme_part": "legalBasis.csv", "project_science_domain": "euroSciVoc.csv", "project_document": "webLink.csv",
+    "reporting_period": "none in open data", "organisation": "organization.csv (latest record per PIC)", "participation": "organization.csv",
+}
+RULES = {  # table.column -> (source column, rule)
+    "project.project_id": ("id", "integer; unique"),
+    "project.status": ("status", "check in SIGNED, CLOSED, TERMINATED"),
+    "project.main_part_code": ("legalBasis.csv where uniqueProgrammePart", "fallback: first code of project.legalBasis"),
+    "project.call_code": ("masterCall", ""),
+    "project.topic_code": ("topics", "one topic per project in both programmes"),
+    "project.scheme_code": ("fundingScheme", "missing -> 'NOT_REPORTED'"),
+    "project.signature_date": ("ecSignatureDate", "ISO date"),
+    "project.start_date": ("startDate", "ISO date"),
+    "project.end_date": ("endDate", "check end_date >= start_date"),
+    "project.total_cost": ("totalCost", "decimal comma or point; 0 -> NULL (not reported)"),
+    "project.ec_max_contribution": ("ecMaxContribution", "decimal comma or point; check >= 0"),
+    "project.objective": ("objective", "broken quotes repaired by cordis_io"),
+    "project.batch_id": ("pipeline", "lineage"),
+    "participation.participation_id": ("pipeline", "surrogate key, ordered by project and order"),
+    "participation.role_code": ("role", "FK to participant_role"),
+    "participation.order_no": ("order", "with project, organisation and role: unique"),
+    "participation.ec_contribution": ("ecContribution", "NULL -> 0 for unfunded roles"),
+    "participation.net_ec_contribution": ("netEcContribution", "NULL -> 0 for unfunded roles; analysis measure (funded roles)"),
+    "participation.total_cost": ("totalCost", "decimal comma or point"),
+    "participation.is_sme": ("SME", "true/false; kept per participation"),
+    "participation.has_ended": ("endOfParticipation", "NULL -> false"),
+    "organisation.organisation_id": ("organisationID", "PIC"),
+    "organisation.legal_name": ("name", "latest record per PIC"),
+    "organisation.name_key": ("name", "normalise_name(): upper case, no accents, punctuation or legal form"),
+    "organisation.type_code": ("activityType", ""),
+    "organisation.country_code": ("country", "EL -> GR, UK -> GB, multi-valued -> first code"),
+    "organisation.city": ("city", "kept (organisation location); street, post code and coordinates dropped"),
+    "organisation.nuts_code": ("nutsCode", ""),
+    "organisation.website_url": ("organizationURL", ""),
+    "science_domain.domain_code": ("euroSciVocCode", "path code; every prefix becomes a domain"),
+    "science_domain.notation": ("last segment of the code", "join key to EuroSciVoc"),
+    "science_domain.label": ("EuroSciVoc prefLabel@en, else CORDIS path", "empty -> 'unlabelled CORDIS concept'"),
+    "science_domain.euroscivoc_uri": ("SPARQL extract", "NULL for CORDIS-only levels"),
+    "country.country_code": ("skos:notation ISO_3166_1_ALPHA_2", ""),
+    "country.is_eu27": ("config.EU27", "27 Member States"),
+}
+
+
+def main(argv=None):
+    argv = argv or sys.argv[1:]
+    db = Path(argv[argv.index("--db") + 1]) if "--db" in argv else DB
+    con = duckdb.connect(str(db), read_only=True)
+    tables = con.execute("select table_name, comment from duckdb_tables() where schema_name = 'main' order by table_name").fetchall()
+    pk = {(t, c) for t, c in con.execute(
+        "select table_name, unnest(constraint_column_names) from duckdb_constraints() where constraint_type = 'PRIMARY KEY'").fetchall()}
+    fk = {}
+    for t, cols, ref in con.execute("select table_name, constraint_column_names, referenced_table from duckdb_constraints() "
+                                    "where constraint_type = 'FOREIGN KEY' and constraint_text like 'FOREIGN KEY%'").fetchall():
+        for c in cols:
+            fk[(t, c)] = ref
+    rows = dict(con.execute("select table_name, estimated_size from duckdb_tables()").fetchall())
+    out = ["# Data dictionary", "",
+           "Generated by `src/build_dictionary.py` from the database built with `model/ddl/schema.sql` "
+           "(types, keys and descriptions come from the catalogue). Source = CORDIS file and column unless stated. "
+           "Rows = Horizon Europe + Horizon 2020 load of 16 November 2026.", ""]
+    order = ["framework_programme", "programme_part", "call", "topic", "funding_scheme", "project", "project_programme_part",
+             "science_domain", "project_science_domain", "organisation", "organisation_type", "country", "participation",
+             "participant_role", "project_document", "reporting_period", "load_batch"]
+    comments = dict(tables)
+    for t in order:
+        n = con.execute(f"select count(*) from {t}").fetchone()[0]
+        out += [f"## `{t}`", "", f"{comments.get(t) or ''} Source: {TABLE_SOURCE.get(t, '')}. Rows: {n:,}.", "",
+                "| Column | Type | Null | Key | Description | Source | Rule |", "|---|---|---|---|---|---|---|"]
+        for c, typ, nullable, cm in con.execute(
+                "select column_name, data_type, is_nullable, comment from duckdb_columns() where table_name = ? "
+                "and schema_name = 'main' order by column_index", [t]).fetchall():
+            key = " ".join(k for k in ("PK" if (t, c) in pk else "", f"FK → {fk[(t, c)]}" if (t, c) in fk else "") if k)
+            src, rule = RULES.get(f"{t}.{c}", ("", ""))
+            out.append(f"| `{c}` | {typ} | {'yes' if nullable else 'no'} | {key} | {cm or ''} | {src} | {rule} |")
+        out.append("")
+    con.close()
+    (ROOT / "model" / "DATA_DICTIONARY.md").write_text("\n".join(out), encoding="utf-8")
+    print("DATA_DICTIONARY.md:", len(order), "tables")
+
+
+if __name__ == "__main__":
+    main()

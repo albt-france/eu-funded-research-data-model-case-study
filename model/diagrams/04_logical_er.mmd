@@ -1,0 +1,102 @@
+%% Logical model (3NF): entities, attributes, keys and cardinalities. Physical DDL: model/ddl/schema.sql
+erDiagram
+  framework_programme ||--|{ programme_part : "structures"
+  programme_part |o--o{ programme_part : "parent of"
+  framework_programme ||--|{ call : "opens"
+  framework_programme ||--|{ topic : "defines"
+  framework_programme ||--|{ funding_scheme : "offers"
+  programme_part ||--o{ project : "main part of"
+  call ||--o{ project : "selects"
+  topic ||--o{ project : "answered by"
+  funding_scheme ||--o{ project : "type of"
+  load_batch ||--|{ project : "loads"
+  project ||--|{ participation : "has"
+  organisation ||--|{ participation : "takes part"
+  participant_role ||--o{ participation : "role of"
+  country |o--o{ organisation : "location of"
+  organisation_type |o--o{ organisation : "type of"
+  project ||--o{ project_science_domain : "classified"
+  science_domain ||--o{ project_science_domain : "classifies"
+  science_domain |o--o{ science_domain : "parent of"
+  project ||--o{ project_programme_part : "drawn on"
+  programme_part ||--o{ project_programme_part : "funds"
+  project ||--o{ project_document : "publishes"
+  project ||--o{ reporting_period : "reported in"
+
+  project {
+    bigint project_id PK
+    varchar acronym
+    varchar status "SIGNED CLOSED TERMINATED"
+    varchar programme_code FK
+    varchar main_part_code FK
+    varchar call_code FK
+    varchar topic_code FK
+    varchar scheme_code FK
+    date start_date
+    date end_date "end >= start"
+    decimal total_cost "NULL = not reported"
+    decimal ec_max_contribution ">= 0"
+    int batch_id FK
+  }
+  participation {
+    bigint participation_id PK
+    bigint project_id FK
+    bigint organisation_id FK
+    varchar role_code FK
+    smallint order_no "unique with project, org, role"
+    decimal net_ec_contribution
+    boolean is_sme "status at that time"
+    boolean has_ended
+  }
+  organisation {
+    bigint organisation_id PK "PIC"
+    varchar legal_name
+    varchar name_key
+    varchar type_code FK
+    char country_code FK
+    varchar nuts_code
+  }
+  science_domain {
+    varchar domain_code PK "e.g. /23/53/373"
+    varchar notation "EuroSciVoc notation"
+    varchar label
+    varchar parent_code FK
+    smallint depth
+    varchar euroscivoc_uri
+  }
+  programme_part {
+    varchar part_code PK
+    varchar programme_code FK
+    varchar parent_part_code FK
+    varchar title
+    smallint depth
+  }
+  participant_role {
+    varchar role_code PK
+    varchar role_group
+    boolean receives_eu_funding
+  }
+  country {
+    char country_code PK "ISO alpha-2"
+    char iso3_code
+    varchar name
+    boolean is_eu27
+  }
+  project_science_domain {
+    bigint project_id PK, FK
+    varchar domain_code PK, FK
+  }
+  reporting_period {
+    bigint project_id PK, FK
+    smallint period_no PK
+    date start_date
+    date end_date
+    date report_due_date
+  }
+  load_batch {
+    int batch_id PK
+    varchar source_url
+    timestamp downloaded_utc
+    int rows_read
+    int lines_repaired
+  }

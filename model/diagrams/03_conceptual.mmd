@@ -1,0 +1,17 @@
+%% Conceptual model: business entities and relationships, no attributes, no technical detail
+erDiagram
+  FRAMEWORK_PROGRAMME ||--|{ PROGRAMME_PART : "is structured in"
+  PROGRAMME_PART |o--o{ PROGRAMME_PART : "contains"
+  FRAMEWORK_PROGRAMME ||--|{ CALL : "opens"
+  CALL ||--|{ TOPIC : "has"
+  TOPIC ||--o{ PROJECT : "is answered by"
+  PROGRAMME_PART ||--o{ PROJECT : "funds"
+  FUNDING_SCHEME ||--o{ PROJECT : "is the type of action of"
+  PROJECT ||--|{ PARTICIPATION : "has"
+  ORGANISATION ||--o{ PARTICIPATION : "takes part through"
+  ROLE ||--o{ PARTICIPATION : "qualifies"
+  COUNTRY ||--o{ ORGANISATION : "hosts"
+  PROJECT }o--o{ SCIENCE_DOMAIN : "is classified in"
+  SCIENCE_DOMAIN |o--o{ SCIENCE_DOMAIN : "is broader than"
+  PROJECT ||--o{ DELIVERABLE : "produces"
+  PROJECT ||--o{ REPORTING_PERIOD : "is reported by"
