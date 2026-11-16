@@ -12,7 +12,7 @@ DIAG = ROOT / "model" / "diagrams"
 MMDC = ROOT / ".tools" / "node_modules" / ".bin" / "mmdc.cmd"
 EDGE = r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
 THEME = {"theme": "base", "themeVariables": {
-    "fontFamily": "Segoe UI, sans-serif", "fontSize": "15px", "primaryColor": "#EEF5FD", "primaryBorderColor": "#2A78D6",
+    "fontFamily": "Segoe UI, sans-serif", "fontSize": "18px", "primaryColor": "#EEF5FD", "primaryBorderColor": "#2A78D6",
     "primaryTextColor": "#0B0B0B", "lineColor": "#52514E", "secondaryColor": "#F4F4F2", "tertiaryColor": "#FCFCFB"},
     "er": {"layoutDirection": "TB"}, "flowchart": {"curve": "basis"}}
 

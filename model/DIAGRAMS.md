@@ -7,7 +7,7 @@ Diagrams as code: the `.mmd` files are the source; GitHub renders the blocks bel
 Source: [`diagrams/01_use_cases.mmd`](diagrams/01_use_cases.mmd) · image: [`01_use_cases.svg`](diagrams/01_use_cases.svg)
 
 ```mermaid
-flowchart LR
+flowchart TB
   PM(["Programme manager"])
   PA(["Policy analyst"])
   PO(["Project officer"])
@@ -42,7 +42,7 @@ flowchart LR
 Source: [`diagrams/02_activity_lifecycle.mmd`](diagrams/02_activity_lifecycle.mmd) · image: [`02_activity_lifecycle.svg`](diagrams/02_activity_lifecycle.svg)
 
 ```mermaid
-flowchart TB
+flowchart LR
   start((start))
   subgraph CO["Consortium: coordinator and beneficiaries"]
     A2["Register PICs,<br/>submit proposal"]
