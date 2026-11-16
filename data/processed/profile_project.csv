@@ -1,0 +1,23 @@
+column,type,missing_pct,distinct,example
+id,number,0.0,24419,101069359
+acronym,text,0.0,22630,
+status,text,0.0,3,SIGNED
+title,text,0.0,24364,
+startDate,date,0.0,509,2022-09-01
+endDate,date,0.0,643,2025-08-31
+totalCost,number,0.0,9637,"2073781,25"
+ecMaxContribution,number,0.0,13683,"2073781,25"
+topics,text,0.0,2878,HORIZON-CL5-2021-D2-01-11
+ecSignatureDate,date,0.0,1320,2022-05-12
+frameworkProgramme,text,0.0,1,HORIZON
+masterCall,text,0.0,722,HORIZON-CL5-2021-D2-01
+subCall,text,0.0,722,HORIZON-CL5-2021-D2-01
+fundingScheme,text,0.0,29,HORIZON-RIA
+nature,number,100.0,0,
+objective,text,0.0,24383,
+contentUpdateDate,date,0.0,13224,2026-03-27 15:10:23
+rcn,number,0.0,24419,237915
+grantDoi,text,1.5,24060,
+keywords,text,9.2,22124,
+Human-validated,text,0.5,3,true
+legalBasis,text,0.0,15,HORIZON.2.5

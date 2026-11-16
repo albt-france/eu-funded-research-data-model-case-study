@@ -1,0 +1,12 @@
+programme_code,type_code,label,participations,eu_contribution_bn,share_pct
+H2020,HES,Higher or secondary education establishment,59931,26.94,39.7
+H2020,PRC,Private for-profit entity (excluding education),60095,18.87,27.8
+H2020,REC,Research organisation,36881,17.12,25.2
+H2020,OTH,Other,11919,2.83,4.2
+H2020,PUB,Public body (excluding research and education),9762,2.06,3.0
+H2020,,,475,0.09,0.1
+HORIZON,HES,Higher or secondary education establishment,54157,24.43,37.3
+HORIZON,REC,Research organisation,33041,17.74,27.1
+HORIZON,PRC,Private for-profit entity (excluding education),44146,16.53,25.3
+HORIZON,OTH,Other,12113,4.26,6.5
+HORIZON,PUB,Public body (excluding research and education),7925,2.5,3.8
