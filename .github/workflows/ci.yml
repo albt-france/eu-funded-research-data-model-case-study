@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  tests:
+    name: Python tests (DuckDB, fixtures)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: pytest -q
+
+  postgres:
+    name: DDL on a real PostgreSQL server
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: ci
+          POSTGRES_DB: cordis
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      PGHOST: localhost
+      PGUSER: postgres
+      PGPASSWORD: ci
+      PGDATABASE: cordis
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply the model
+        run: |
+          psql -v ON_ERROR_STOP=1 -f model/ddl/schema.sql
+          psql -v ON_ERROR_STOP=1 -f model/ddl/schema_postgres.sql
+          psql -v ON_ERROR_STOP=1 -f model/ddl/mart.sql
+      - name: Valid rows load, invalid rows are rejected
+        run: |
+          psql -f tests/sql/postgres_smoke.sql > out.txt 2> err.txt || true
+          cat out.txt err.txt
+          test "$(grep -c 'ERROR' err.txt)" -eq 3
+          grep -q 'Pillar II' out.txt
+          grep -A2 'participations' out.txt | grep -q ' 2'
