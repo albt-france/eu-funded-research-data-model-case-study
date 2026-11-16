@@ -1,0 +1,17 @@
+# environments and caches
+.venv/
+__pycache__/
+.pytest_cache/
+.tmp/
+.tools/
+*.pyc
+.ipynb_checkpoints/
+# data that is downloaded or rebuilt (see README: how to rerun)
+data/raw/
+data/interim/
+data/*.duckdb
+data/*.duckdb.wal
+# local only
+.env
+DECISIONS.md
+HANDOFF*
