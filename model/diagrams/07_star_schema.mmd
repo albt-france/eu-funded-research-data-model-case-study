@@ -1,0 +1,38 @@
+%% Analytical variant: star schema (views in model/ddl/mart.sql). Grain: one organisation in one project in one role.
+erDiagram
+  dim_project ||--o{ fact_participation : "project"
+  dim_organisation ||--o{ fact_participation : "organisation"
+  country ||--o{ fact_participation : "country"
+  participant_role ||--o{ fact_participation : "role"
+  dim_project ||--o{ bridge_project_domain : "weight 1/n"
+  science_domain ||--o{ bridge_project_domain : "top domain"
+  fact_participation {
+    bigint participation_id
+    bigint project_id FK
+    bigint organisation_id FK
+    char country_code FK
+    varchar role_group
+    int start_year
+    decimal net_ec_contribution "funded roles only"
+    int is_coordinator
+  }
+  dim_project {
+    bigint project_id PK
+    varchar programme_name
+    varchar pillar_title
+    varchar action_family
+    int start_year
+    int duration_months
+    int consortium_size
+  }
+  dim_organisation {
+    bigint organisation_id PK
+    varchar type_label
+    varchar country_name
+    boolean is_eu27
+  }
+  bridge_project_domain {
+    bigint project_id FK
+    varchar domain_code FK
+    double weight
+  }

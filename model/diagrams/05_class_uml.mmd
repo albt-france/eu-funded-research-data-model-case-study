@@ -1,0 +1,86 @@
+%% UML class diagram of the same domain: objects with behaviour, associations with multiplicities, an association class
+classDiagram
+  direction LR
+  class FrameworkProgramme {
+    +code: String
+    +name: String
+    +period: YearRange
+  }
+  class ProgrammePart {
+    +code: String
+    +title: String
+    +pillar() ProgrammePart
+  }
+  class Call {
+    +code: String
+  }
+  class Topic {
+    +code: String
+    +title: String
+  }
+  class Project {
+    +id: Long
+    +acronym: String
+    +status: ProjectStatus
+    +startDate: Date
+    +endDate: Date
+    +ecMaxContribution: Money
+    +durationMonths() int
+    +coordinator() Organisation
+    +consortiumSize() int
+  }
+  class Participation {
+    <<association class>>
+    +role: Role
+    +order: int
+    +netEcContribution: Money
+    +isSme: Boolean
+    +hasEnded: Boolean
+    +isFunded() Boolean
+  }
+  class Organisation {
+    +pic: Long
+    +legalName: String
+    +type: OrganisationType
+  }
+  class Country {
+    +isoCode: String
+    +name: String
+    +isEu27: Boolean
+  }
+  class ScienceDomain {
+    +notation: String
+    +label: String
+    +descendants() List~ScienceDomain~
+  }
+  class ProjectStatus {
+    <<enumeration>>
+    SIGNED
+    CLOSED
+    TERMINATED
+  }
+  class Role {
+    <<enumeration>>
+    COORDINATOR
+    BENEFICIARY
+    AFFILIATED_ENTITY
+    ASSOCIATED_PARTNER
+  }
+  class Deliverable {
+    +url: String
+    +type: String
+  }
+  FrameworkProgramme "1" *-- "1..*" ProgrammePart : structured in
+  ProgrammePart "0..1" o-- "0..*" ProgrammePart : parent
+  FrameworkProgramme "1" --> "1..*" Call : opens
+  Call "1" --> "1..*" Topic
+  Project "0..*" --> "1" Topic : answers
+  Project "0..*" --> "1" ProgrammePart : funded under
+  Project "1" *-- "1..*" Participation
+  Participation "0..*" --> "1" Organisation
+  Organisation "0..*" --> "0..1" Country
+  Project "0..*" --> "0..*" ScienceDomain : classified in
+  ScienceDomain "0..1" o-- "0..*" ScienceDomain : broader
+  Project "1" *-- "0..*" Deliverable
+  Project ..> ProjectStatus
+  Participation ..> Role

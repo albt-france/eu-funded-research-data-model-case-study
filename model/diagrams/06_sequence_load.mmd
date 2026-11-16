@@ -1,0 +1,33 @@
+%% UML sequence diagram: loading a new CORDIS release
+sequenceDiagram
+  autonumber
+  actor DS as Data steward
+  participant DL as download.py
+  participant CO as CORDIS (Publications Office)
+  participant ST as stage.py and cordis_io
+  participant LD as load.py
+  participant DB as DuckDB (schema.sql)
+  participant QA as quality.py
+  DS->>DL: python src/download.py
+  DL->>CO: GET cordis-HORIZONprojects-csv.zip
+  CO-->>DL: zip, about 38 MB
+  DL->>DL: log URL, date and size
+  DS->>LD: python src/load.py
+  LD->>ST: stage(raw files)
+  loop each CSV file
+    ST->>ST: split lines, repair broken quotes
+    ST->>ST: drop personal and address columns
+  end
+  ST-->>LD: parquet files and parse statistics
+  LD->>LD: clean amounts, dates, ISO countries, build tables
+  LD->>DB: CREATE tables with keys, checks, comments
+  loop tables in foreign-key order
+    LD->>DB: INSERT, hierarchies parent level first
+    alt constraint violated
+      DB-->>LD: error, the load stops
+    end
+  end
+  LD->>DB: CREATE mart views (star schema)
+  LD->>QA: run_checks()
+  QA->>DB: 18 counting queries and raw control totals
+  QA-->>DS: QA_REPORT.md with PASS, WARN, FAIL
