@@ -1,0 +1,4 @@
+"physUrl";"id";"availableLanguages";"status";"archivedDate";"type";"source";"represents";"projectID"
+"https://example.org/deliverable-1";"doc1";"en";"";"";"projectDeliverable";"corda";"";"900001"
+"https://example.org/deliverable-1";"doc1";"en";"";"";"projectDeliverable";"corda";"";"900001"
+"https://example.org/website";"doc2";"en";"";"";"relatedWebsite";"editorial";"";"900003"
