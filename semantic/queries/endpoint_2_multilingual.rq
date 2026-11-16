@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX euvoc: <http://publications.europa.eu/ontology/euvoc#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+# Q2. One concept, every official language: why a controlled vocabulary helps a multilingual EU system
+SELECT ?lang ?label WHERE {
+  GRAPH <http://publications.europa.eu/resource/authority/euroscivoc> {
+    ?c skos:inScheme <http://data.europa.eu/8mn/euroscivoc#40c0f173-baa3-48a3-9fe6-d6e8fb366a00> ; skos:prefLabel "artificial intelligence"@en ; skos:prefLabel ?label .
+    FILTER (STRSTARTS(STR(?c), 'http://data.europa.eu/8mn/euroscivoc#'))
+  }
+  BIND (lang(?label) AS ?lang)
+} ORDER BY ?lang

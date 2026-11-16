@@ -1,0 +1,15 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX euvoc: <http://publications.europa.eu/ontology/euvoc#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+# Q3. The full path of "machine learning" up to its top concept (property path), as CORDIS stores it in euroSciVocPath
+SELECT ?ancestor ?label ?notation WHERE {
+  GRAPH <http://publications.europa.eu/resource/authority/euroscivoc> {
+    ?c skos:inScheme <http://data.europa.eu/8mn/euroscivoc#40c0f173-baa3-48a3-9fe6-d6e8fb366a00> ; skos:prefLabel "machine learning"@en ; skos:broader* ?ancestor .
+    ?ancestor skos:prefLabel ?label ; euvoc:xlNotation/rdf:value ?notation .
+    FILTER (lang(?label) = 'en')
+    FILTER (STRSTARTS(STR(?c), 'http://data.europa.eu/8mn/euroscivoc#'))
+    FILTER (STRSTARTS(STR(?ancestor), 'http://data.europa.eu/8mn/euroscivoc#'))
+  }
+}
