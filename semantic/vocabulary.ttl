@@ -1,0 +1,37 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix org:     <http://www.w3.org/ns/org#> .
+@prefix cs:      <https://example.org/cordis/vocab#> .
+
+# Local terms: only what the reused vocabularies (SKOS, ORG, DCAT, Dublin Core, FOAF) do not provide.
+# Each one is attached to a standard property so that a generic client still understands it.
+# The base IRI example.org is a placeholder: in production it would be a namespace owned by the data publisher.
+
+cs:ecMaxContribution a owl:DatatypeProperty ;
+    rdfs:label "maximum EU contribution"@en ;
+    rdfs:comment "Maximum EU contribution in the grant agreement, in euro (commitment, not payment)."@en ;
+    rdfs:domain org:OrganizationalCollaboration ;
+    rdfs:range xsd:decimal .
+
+cs:netEcContribution a owl:DatatypeProperty ;
+    rdfs:label "net EU contribution"@en ;
+    rdfs:comment "EU contribution to one participant, net of transfers to affiliated entities, in euro."@en ;
+    rdfs:domain org:Membership ;
+    rdfs:range xsd:decimal .
+
+cs:fundedUnder a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:relation ;
+    rdfs:label "funded under"@en ;
+    rdfs:comment "Programme part (legal basis) that funds the project; the parts form a SKOS hierarchy."@en .
+
+cs:fundingScheme a owl:ObjectProperty ;
+    rdfs:subPropertyOf dcterms:type ;
+    rdfs:label "funding scheme"@en ;
+    rdfs:comment "Type of action of the grant (RIA, IA, CSA, ERC, MSCA...)."@en .
+
+cs:isSme a owl:DatatypeProperty ;
+    rdfs:label "SME at the time of the participation"@en ;
+    rdfs:domain org:Membership ;
+    rdfs:range xsd:boolean .

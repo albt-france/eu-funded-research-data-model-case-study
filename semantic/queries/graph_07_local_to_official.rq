@@ -1,0 +1,17 @@
+# CORDIS-only concepts and the official EuroSciVoc concept they hang under
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cs: <https://example.org/cordis/vocab#>
+PREFIX role: <https://example.org/cordis/role/>
+SELECT ?local ?label ?official ?official_label WHERE {
+  ?local a skos:Concept ; skos:prefLabel ?label ; skos:broader+ ?official .
+  ?official skos:prefLabel ?official_label .
+  FILTER (STRSTARTS(STR(?local), "https://example.org/"))
+  FILTER (STRSTARTS(STR(?official), "http://data.europa.eu/8mn/euroscivoc"))
+  FILTER NOT EXISTS { ?local skos:broader+ ?mid . ?mid skos:broader+ ?official .
+                      FILTER (STRSTARTS(STR(?mid), "http://data.europa.eu/8mn/euroscivoc")) }
+} ORDER BY ?label

@@ -1,0 +1,14 @@
+# Country pairs that work together most often (two members of the same consortium)
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cs: <https://example.org/cordis/vocab#>
+PREFIX role: <https://example.org/cordis/role/>
+SELECT ?c1 ?c2 (COUNT(DISTINCT ?project) AS ?shared_projects) WHERE {
+  ?m1 org:organization ?project ; org:member/dcterms:spatial ?c1 .
+  ?m2 org:organization ?project ; org:member/dcterms:spatial ?c2 .
+  FILTER (STR(?c1) < STR(?c2))
+} GROUP BY ?c1 ?c2 ORDER BY DESC(?shared_projects) LIMIT 15

@@ -1,0 +1,14 @@
+# Domains assigned together to the same project (beyond AI itself)
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cs: <https://example.org/cordis/vocab#>
+PREFIX role: <https://example.org/cordis/role/>
+SELECT ?l1 ?l2 (COUNT(DISTINCT ?p) AS ?projects) WHERE {
+  ?p dcterms:subject ?d1, ?d2 .
+  ?d1 skos:prefLabel ?l1 . ?d2 skos:prefLabel ?l2 .
+  FILTER (STR(?l1) < STR(?l2))
+} GROUP BY ?l1 ?l2 ORDER BY DESC(?projects) LIMIT 10

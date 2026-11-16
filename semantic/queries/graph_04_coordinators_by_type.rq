@@ -1,0 +1,13 @@
+# Who coordinates: coordinators by organisation type
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cs: <https://example.org/cordis/vocab#>
+PREFIX role: <https://example.org/cordis/role/>
+SELECT ?type (COUNT(*) AS ?coordinations) WHERE {
+  ?m org:role role:coordinator ; org:member ?o .
+  ?o org:classification/skos:prefLabel ?type .
+} GROUP BY ?type ORDER BY DESC(?coordinations)

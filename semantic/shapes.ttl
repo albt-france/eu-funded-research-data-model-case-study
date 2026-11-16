@@ -1,0 +1,47 @@
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix org:     <http://www.w3.org/ns/org#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix cs:      <https://example.org/cordis/vocab#> .
+@prefix role:    <https://example.org/cordis/role/> .
+
+# SHACL shapes: the business rules of the relational model, written for the graph.
+
+cs:ProjectShape a sh:NodeShape ;
+    sh:targetClass foaf:Project ;
+    sh:property [ sh:path dcterms:identifier ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path dcterms:title ; sh:minCount 1 ] ;
+    sh:property [ sh:path cs:ecMaxContribution ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] ;
+    sh:property [ sh:path ( dcterms:temporal dcat:startDate ) ; sh:maxCount 1 ; sh:datatype xsd:date ] ;
+    sh:property [ sh:path dcterms:subject ; sh:class skos:Concept ] ;
+    # "every project has exactly one coordinator": memberships pointing to the project, qualified by their role
+    sh:property [
+        sh:path [ sh:inversePath org:organization ] ;
+        sh:qualifiedValueShape [ sh:path org:role ; sh:hasValue role:coordinator ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:qualifiedMaxCount 1 ;
+        sh:message "A project must have exactly one coordinator."
+    ] .
+
+cs:MembershipShape a sh:NodeShape ;
+    sh:targetClass org:Membership ;
+    sh:property [ sh:path org:member ; sh:minCount 1 ; sh:maxCount 1 ; sh:class org:Organization ] ;
+    sh:property [ sh:path org:organization ; sh:minCount 1 ; sh:maxCount 1 ; sh:class org:OrganizationalCollaboration ] ;
+    sh:property [ sh:path org:role ; sh:minCount 1 ; sh:maxCount 1 ; sh:class org:Role ] ;
+    sh:property [ sh:path cs:netEcContribution ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minInclusive 0 ] .
+
+cs:OrganisationShape a sh:NodeShape ;
+    sh:targetClass org:Organization ;
+    sh:property [ sh:path org:identifier ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ] ;
+    sh:property [ sh:path dcterms:spatial ; sh:maxCount 1 ;
+                  sh:pattern "^http://publications.europa.eu/resource/authority/country/[A-Z]{3}$" ;
+                  sh:message "Country must be an EU Vocabularies country authority URI." ] .
+
+cs:ConceptShape a sh:NodeShape ;
+    sh:targetClass skos:Concept ;
+    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
+    sh:property [ sh:path skos:broader ; sh:class skos:Concept ] .
