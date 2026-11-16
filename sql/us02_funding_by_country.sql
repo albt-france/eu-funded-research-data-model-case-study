@@ -7,4 +7,4 @@ FROM mart.fact_participation f
 LEFT JOIN country c ON c.country_code = f.country_code
 WHERE f.programme_code = 'HORIZON'
 GROUP BY f.country_code, c.name, c.is_eu27
-ORDER BY eu_contribution_bn DESC;
+ORDER BY eu_contribution_bn DESC, f.country_code;

@@ -15,4 +15,4 @@ LEFT JOIN country c ON c.country_code = f.country_code
 WHERE f.programme_code = 'HORIZON'
 GROUP BY f.country_code, c.name
 HAVING COUNT(*) >= 1000
-ORDER BY participations DESC;
+ORDER BY participations DESC, f.country_code;
