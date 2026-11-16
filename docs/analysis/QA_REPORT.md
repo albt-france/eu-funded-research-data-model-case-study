@@ -16,6 +16,7 @@ FAIL = the load must be fixed. WARN = a known property of the source, reported a
 | Q10 | Duplicate organisation candidates (same normalised name and country, different PIC) | 190 | WARN |
 | Q11 | Grant signed after the project start date | 3,992 | WARN |
 | Q12 | CORDIS domain codes not found in the official EuroSciVoc (EU Vocabularies) | 103 | WARN |
+| Q18 | Domain codes used by CORDIS without any label (path and title empty in the source) | 1 | WARN |
 | Q13 | Project total cost not reported (lump sum or unit cost grants) | 13,571 | WARN |
 | Q14 | Organisation leaves and re-joins a project in the same role (two rows, different order) | 253 | WARN |
 | Q15 | Reporting periods loaded (not published in CORDIS open data) | 1 | WARN |

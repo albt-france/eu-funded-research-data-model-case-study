@@ -1,0 +1,60 @@
+local,label,official,official_label
+https://example.org/cordis/domain/23/43/251/1077/41191674,absorption spectroscopy,http://data.europa.eu/8mn/euroscivoc#7b38f8b4-3f5a-4a59-84f8-d270c33146c8,spectroscopy
+https://example.org/cordis/domain/23/53/365/78089026,alkali metals,http://data.europa.eu/8mn/euroscivoc#45e374e6-da15-44da-9995-9ddd9b01fea9,inorganic chemistry
+https://example.org/cordis/domain/23/53/365/88826151,alkaline earth metals,http://data.europa.eu/8mn/euroscivoc#45e374e6-da15-44da-9995-9ddd9b01fea9,inorganic chemistry
+https://example.org/cordis/domain/25/63/19232965/84184824,amorphous semiconductors,http://data.europa.eu/8mn/euroscivoc#dc9a4100-9eb3-4956-8fd8-b67ea07a70ad,materials engineering
+https://example.org/cordis/domain/25/63/19232965,amorphous solids,http://data.europa.eu/8mn/euroscivoc#dc9a4100-9eb3-4956-8fd8-b67ea07a70ad,materials engineering
+https://example.org/cordis/domain/21/35/159/653/8052398,antibiotics,http://data.europa.eu/8mn/euroscivoc#f52713c1-c09a-4bab-bf96-be85005c3233,pharmaceutical drug
+https://example.org/cordis/domain/21/35/159/653/70038406,antivirals,http://data.europa.eu/8mn/euroscivoc#f52713c1-c09a-4bab-bf96-be85005c3233,pharmaceutical drug
+https://example.org/cordis/domain/25/75/461/1239/51612216,astronautical engineering,http://data.europa.eu/8mn/euroscivoc#b400cbdb-9e22-43cf-8933-0e034a0a5871,aerospace engineering
+https://example.org/cordis/domain/25/67/425/83028390,biomass energy,http://data.europa.eu/8mn/euroscivoc#0432df49-4127-42da-9eae-d07d8061f62d,energy and fuels
+https://example.org/cordis/domain/23/53/69669548,catalysis,http://data.europa.eu/8mn/euroscivoc#bce870dd-43f3-4656-8866-d76b0d71f5b8,chemical sciences
+https://example.org/cordis/domain/29/97/87917856/1335/31958608,civil society organisations,http://data.europa.eu/8mn/euroscivoc#c4a6d777-1ac8-4d94-b30c-b1a8dbfd95e0,civil society
+https://example.org/cordis/domain/25/67/11936537/64292513,climate change adaptation,http://data.europa.eu/8mn/euroscivoc#531bd18a-eedd-4345-8b2f-5464f96615f8,environmental engineering
+https://example.org/cordis/domain/25/67/11936537/91827000,climatic change mitigation,http://data.europa.eu/8mn/euroscivoc#531bd18a-eedd-4345-8b2f-5464f96615f8,environmental engineering
+https://example.org/cordis/domain/23/49/335/1009/54034042,coastal ecosystems,http://data.europa.eu/8mn/euroscivoc#81f1f477-aa96-427a-adf9-7742a429899a,ecosystems
+https://example.org/cordis/domain/23/51/359/1063/82355983,combinatorics,http://data.europa.eu/8mn/euroscivoc#99f792a4-fb82-4f84-98df-ff76d9f98f0e,discrete mathematics
+https://example.org/cordis/domain/21/35/153/22901471,dementia,http://data.europa.eu/8mn/euroscivoc#c4793dfe-e80e-49dd-9fcc-a1a742de1b25,neurology
+https://example.org/cordis/domain/29/95/92131787/73291420,development economics,http://data.europa.eu/8mn/euroscivoc#0bf709d0-834b-4448-a89c-7fb04cece64a,other social sciences
+https://example.org/cordis/domain/29/95/92131787,development studies,http://data.europa.eu/8mn/euroscivoc#0bf709d0-834b-4448-a89c-7fb04cece64a,other social sciences
+https://example.org/cordis/domain/29/93/3133018,developmental psychology,http://data.europa.eu/8mn/euroscivoc#5c66325e-b247-4e52-92ec-544ae4d061cc,psychology
+https://example.org/cordis/domain/31/115/563/49932688,digital humanities,http://data.europa.eu/8mn/euroscivoc#2dbfd0d0-fc0e-4426-986e-ad00a7ea7810,library science
+https://example.org/cordis/domain/21/35/159/79909316,drug discovery,http://data.europa.eu/8mn/euroscivoc#e2a7fab2-7027-40e8-b189-f401a23818c8,pharmacology and pharmacy
+https://example.org/cordis/domain/25/67/11936537/62051362,ecological restoration,http://data.europa.eu/8mn/euroscivoc#531bd18a-eedd-4345-8b2f-5464f96615f8,environmental engineering
+https://example.org/cordis/domain/25/67/11936537,ecosystem-based management,http://data.europa.eu/8mn/euroscivoc#531bd18a-eedd-4345-8b2f-5464f96615f8,environmental engineering
+https://example.org/cordis/domain/23/47/297/52679357,edge artificial intelligence,http://data.europa.eu/8mn/euroscivoc#4c8f4b46-6f5c-41d9-9079-7de85c16431d,artificial intelligence
+https://example.org/cordis/domain/29/93/47293307,ergonomics,http://data.europa.eu/8mn/euroscivoc#5c66325e-b247-4e52-92ec-544ae4d061cc,psychology
+https://example.org/cordis/domain/21/33/137/133/2734973,exposomes,http://data.europa.eu/8mn/euroscivoc#6eb34fa9-e534-437c-a6c1-2051b6740bb9,epidemiology
+https://example.org/cordis/domain/23/47/297/495996,frugal artificial intelligence,http://data.europa.eu/8mn/euroscivoc#4c8f4b46-6f5c-41d9-9079-7de85c16431d,artificial intelligence
+https://example.org/cordis/domain/23/47/297/26456811,generative artificial intelligence,http://data.europa.eu/8mn/euroscivoc#4c8f4b46-6f5c-41d9-9079-7de85c16431d,artificial intelligence
+https://example.org/cordis/domain/23/43/257/771/1511/19823118,giant planets,http://data.europa.eu/8mn/euroscivoc#02fb94bf-d412-425c-8f85-f9b9d5068268,planets
+https://example.org/cordis/domain/27/81/30021/499/89427643,greenhouse horticulture,http://data.europa.eu/8mn/euroscivoc#b0a5e340-eff7-4c23-8db2-e82fb8b8e930,horticulture
+https://example.org/cordis/domain/23/49/41594476,histology,http://data.europa.eu/8mn/euroscivoc#803cff73-504b-41ae-9873-1836c76c15d1,biological sciences
+https://example.org/cordis/domain/23/47/297/935/61878528,image recognition,http://data.europa.eu/8mn/euroscivoc#c3f7741c-652b-44cc-9062-491fc41aed2f,computer vision
+https://example.org/cordis/domain/23/47/15962364,knowledge engineering,http://data.europa.eu/8mn/euroscivoc#e437ed99-4a4e-4fb3-af7e-fae6a2c2a800,computer and information sciences
+https://example.org/cordis/domain/25/67/423/11977416,land management,http://data.europa.eu/8mn/euroscivoc#8f5a6a53-4d7c-471d-8af2-3f4b57e4655e,natural resource management
+https://example.org/cordis/domain/21/39/225/49564263,lung cancer,http://data.europa.eu/8mn/euroscivoc#a348fcd2-3bdd-46f9-aa2c-a91301f1e12e,clinical medicine
+https://example.org/cordis/domain/23/51/359/1063/53388279,mathematical logic,http://data.europa.eu/8mn/euroscivoc#99f792a4-fb82-4f84-98df-ff76d9f98f0e,discrete mathematics
+https://example.org/cordis/domain/23/53/365/71735538,metalloids,http://data.europa.eu/8mn/euroscivoc#45e374e6-da15-44da-9995-9ddd9b01fea9,inorganic chemistry
+https://example.org/cordis/domain/23/49/341/12537269,microbiomes,http://data.europa.eu/8mn/euroscivoc#d8bca3d6-cd94-4597-8d72-39fd31699728,microbiology
+https://example.org/cordis/domain/25/73/30020/455/1221/73074801,mobile network,http://data.europa.eu/8mn/euroscivoc#08c42eeb-abe1-44ee-bf30-a29f39897f40,telecommunications network
+https://example.org/cordis/domain/23/47/297/935/90070193,motion analysis,http://data.europa.eu/8mn/euroscivoc#c3f7741c-652b-44cc-9062-491fc41aed2f,computer vision
+https://example.org/cordis/domain/23/53/365/68548065,noble gases,http://data.europa.eu/8mn/euroscivoc#45e374e6-da15-44da-9995-9ddd9b01fea9,inorganic chemistry
+https://example.org/cordis/domain/21/33/117/38005658,obesity,http://data.europa.eu/8mn/euroscivoc#71cd7e43-dbf6-420f-8338-b444439e4e41,nutrition
+https://example.org/cordis/domain/23/47/297/935/24997145,object detection,http://data.europa.eu/8mn/euroscivoc#c3f7741c-652b-44cc-9062-491fc41aed2f,computer vision
+https://example.org/cordis/domain/21/33/137/80706006,occupational health,http://data.europa.eu/8mn/euroscivoc#b533acc2-aff1-4c65-80ca-5d5bee865ba9,public and environmental health
+https://example.org/cordis/domain/25/77/84897392/33625299,ocean engineering,http://data.europa.eu/8mn/euroscivoc#0bccc6b0-7563-4056-aff7-5436488dc37e,water engineering
+https://example.org/cordis/domain/21/39/225,oncology,http://data.europa.eu/8mn/euroscivoc#a348fcd2-3bdd-46f9-aa2c-a91301f1e12e,clinical medicine
+https://example.org/cordis/domain/21/33/5029300,personalized medicine,http://data.europa.eu/8mn/euroscivoc#34b9c059-9e6c-4ec1-8a96-845c95c1a978,health sciences
+https://example.org/cordis/domain/25/67/425/1169/1685/98939167,photovoltaic,http://data.europa.eu/8mn/euroscivoc#a77a1e7c-3056-4bdc-9678-3f02c4512f9c,solar energy
+https://example.org/cordis/domain/23/53/365/30816592,post-transition metals,http://data.europa.eu/8mn/euroscivoc#45e374e6-da15-44da-9995-9ddd9b01fea9,inorganic chemistry
+https://example.org/cordis/domain/23/43/263/57029799,quasiparticles,http://data.europa.eu/8mn/euroscivoc#c61cf6c6-8b52-4fbb-9b30-b09659e476cf,condensed matter physics
+https://example.org/cordis/domain/25/67/417/64131187,rare earths,http://data.europa.eu/8mn/euroscivoc#060a0080-34de-404c-b235-ee69daa67ada,mining and mineral processing
+https://example.org/cordis/domain/23/47/303/20089633,relational databases,http://data.europa.eu/8mn/euroscivoc#1f6c74df-a512-462e-99aa-8dcbaa98972a,databases
+https://example.org/cordis/domain/29/101/561/27781344,science and technology studies,http://data.europa.eu/8mn/euroscivoc#65672057-bb45-47a9-9b2d-5dd7c15dae10,anthropology
+https://example.org/cordis/domain/23/47/297/933/36035695,semisupervised learning,http://data.europa.eu/8mn/euroscivoc#527ab165-56f2-4020-8975-e7cd3f21d01d,machine learning
+https://example.org/cordis/domain/23/45/283/2818304,soil management,http://data.europa.eu/8mn/euroscivoc#b486d48d-b7d5-46d8-9c7a-3e921eebe3d5,soil science
+https://example.org/cordis/domain/25/75/461/1239/51612216/98672716,spacecraft,http://data.europa.eu/8mn/euroscivoc#b400cbdb-9e22-43cf-8933-0e034a0a5871,aerospace engineering
+https://example.org/cordis/domain/29/97/67681549/33870553,terrorism,http://data.europa.eu/8mn/euroscivoc#b525048b-4d08-420b-b2ac-5cccaaa26d91,political transitions
+https://example.org/cordis/domain/23/53/365/72505310,transition metals,http://data.europa.eu/8mn/euroscivoc#45e374e6-da15-44da-9995-9ddd9b01fea9,inorganic chemistry
+https://example.org/cordis/domain/29/101/561/27781344/27578667,unlabelled CORDIS concept 27578667,http://data.europa.eu/8mn/euroscivoc#65672057-bb45-47a9-9b2d-5dd7c15dae10,anthropology

@@ -1,0 +1,13 @@
+# Ongoing projects (end date after the data date) and their maximum EU contribution
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cs: <https://example.org/cordis/vocab#>
+PREFIX role: <https://example.org/cordis/role/>
+SELECT (COUNT(?p) AS ?ongoing_projects) (SUM(?max) AS ?eu_max_contribution) WHERE {
+  ?p a foaf:Project ; cs:ecMaxContribution ?max ; dcterms:temporal/dcat:endDate ?end .
+  FILTER (?end > "2026-11-16"^^xsd:date)
+}

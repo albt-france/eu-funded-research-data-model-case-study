@@ -194,7 +194,8 @@ def combine(frames: list[dict]) -> dict[str, pd.DataFrame]:
     esv = pd.read_csv(REF / "euroscivoc_concepts.csv", dtype=str).drop_duplicates("notation").set_index("notation")
     dom["notation"] = dom.domain_code.str.rsplit("/", n=1).str[-1]
     dom["euroscivoc_uri"] = dom.notation.map(esv.concept)
-    dom["label"] = dom.notation.map(esv.label).fillna(dom.path_label).fillna(dom.notation)
+    dom["label"] = (dom.notation.map(esv.label).fillna(dom.path_label.replace("", None))
+                    .fillna("unlabelled CORDIS concept " + dom.notation))
     dom["parent_code"] = dom.domain_code.map(domain_parent)
     dom["depth"] = dom.domain_code.str.count("/")
     out["science_domain"] = dom[["domain_code", "notation", "label", "parent_code", "depth", "euroscivoc_uri"]]

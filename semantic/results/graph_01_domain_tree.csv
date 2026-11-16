@@ -1,0 +1,20 @@
+domain,label,projects
+http://data.europa.eu/8mn/euroscivoc#527ab165-56f2-4020-8975-e7cd3f21d01d,machine learning,502
+http://data.europa.eu/8mn/euroscivoc#4c8f4b46-6f5c-41d9-9079-7de85c16431d,artificial intelligence,383
+http://data.europa.eu/8mn/euroscivoc#24c2ff40-3728-4774-bc00-363bab563178,computational intelligence,131
+http://data.europa.eu/8mn/euroscivoc#dbe8c8c7-29d5-428b-8210-05bf4d427497,deep learning,125
+http://data.europa.eu/8mn/euroscivoc#cbe8013b-7afd-4aa7-9fa8-6eb932965f0a,reinforcement learning,53
+http://data.europa.eu/8mn/euroscivoc#c3f7741c-652b-44cc-9062-491fc41aed2f,computer vision,43
+https://example.org/cordis/domain/23/47/297/26456811,generative artificial intelligence,34
+http://data.europa.eu/8mn/euroscivoc#179b5ccd-b066-4a3d-a60f-5d8dae645788,heuristic programming,15
+http://data.europa.eu/8mn/euroscivoc#cdeba421-3731-4be8-a49d-6616fb3a1c85,pattern recognition,14
+http://data.europa.eu/8mn/euroscivoc#f066fc3b-3bbb-4137-8b49-b13f8f664dc7,expert systems,8
+http://data.europa.eu/8mn/euroscivoc#c785fbd6-7242-4926-8c84-d6f82b14cb75,supervised learning,8
+http://data.europa.eu/8mn/euroscivoc#1076b605-d9f3-4961-8dbe-dc9abc72b42b,unsupervised learning,8
+https://example.org/cordis/domain/23/47/297/935/90070193,motion analysis,7
+https://example.org/cordis/domain/23/47/297/935/61878528,image recognition,7
+http://data.europa.eu/8mn/euroscivoc#a33bb877-2385-45b7-bcd3-e83d372448fb,transfer learning,5
+https://example.org/cordis/domain/23/47/297/52679357,edge artificial intelligence,4
+https://example.org/cordis/domain/23/47/297/495996,frugal artificial intelligence,4
+https://example.org/cordis/domain/23/47/297/935/24997145,object detection,2
+https://example.org/cordis/domain/23/47/297/933/36035695,semisupervised learning,1

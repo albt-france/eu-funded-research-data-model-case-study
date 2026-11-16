@@ -39,6 +39,8 @@ CHECKS = [  # id, rule, severity if > 0, SQL returning the number of offending r
      "select count(*) from project where signature_date > start_date"),
     ("Q12", "CORDIS domain codes not found in the official EuroSciVoc (EU Vocabularies)", "WARN",
      "select count(*) from science_domain where euroscivoc_uri is null"),
+    ("Q18", "Domain codes used by CORDIS without any label (path and title empty in the source)", "WARN",
+     "select count(*) from science_domain where label like 'unlabelled CORDIS concept%'"),
     ("Q13", "Project total cost not reported (lump sum or unit cost grants)", "WARN",
      "select count(*) from project where total_cost is null"),
     ("Q14", "Organisation leaves and re-joins a project in the same role (two rows, different order)", "WARN",

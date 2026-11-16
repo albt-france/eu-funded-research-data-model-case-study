@@ -1,0 +1,13 @@
+# Projects whose consortium spans the most countries
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cs: <https://example.org/cordis/vocab#>
+PREFIX role: <https://example.org/cordis/role/>
+SELECT ?acronym (COUNT(DISTINCT ?country) AS ?countries) (COUNT(DISTINCT ?o) AS ?members) WHERE {
+  ?project a foaf:Project ; skos:altLabel ?acronym .
+  ?m org:organization ?project ; org:member ?o . ?o dcterms:spatial ?country .
+} GROUP BY ?acronym ORDER BY DESC(?countries) LIMIT 10
