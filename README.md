@@ -7,14 +7,8 @@ pipeline, a SQL database, an RDF layer with SPARQL, and analysis of how EU-funde
 the only invented rows are the test fixtures, labelled **SIMULATED**.
 
 - **Report (8 pages):** [docs/EU_Funded_Research_Data_Model_Case_Study.pdf](docs/EU_Funded_Research_Data_Model_Case_Study.pdf)
-- **Diagrams (rendered by GitHub):** [model/DIAGRAMS.md](model/DIAGRAMS.md) · model notes: [model/MODEL.md](model/MODEL.md) ·
-  data dictionary: [model/DATA_DICTIONARY.md](model/DATA_DICTIONARY.md)
-- **Dashboard:** [dashboard/horizon_europe_explorer.html](dashboard/horizon_europe_explorer.html) (self-contained: download it and
-  open it in a browser; tabs: overview, scientific domains, cooperation)
-- **Business analysis:** [context and life cycle](docs/analysis/BUSINESS_CONTEXT.md) ·
-  [14 user stories with Given/When/Then](docs/analysis/REQUIREMENTS.md) · [data profiling](docs/analysis/DATA_PROFILING.md) ·
-  [quality report](docs/analysis/QA_REPORT.md)
-- **Semantic layer:** [semantic/MAPPING.md](semantic/MAPPING.md) · notebook: [notebooks/analysis.ipynb](notebooks/analysis.ipynb)
+- **Dashboard:** [Horizon Europe explorer](https://albt-france.github.io/eu-funded-research-data-model-case-study/dashboard/horizon_europe_explorer.html)
+  (opens in the browser; tabs: overview, scientific domains, cooperation)
 
 ![Overview page of the report](docs/img/pdf_p0.png)
 
